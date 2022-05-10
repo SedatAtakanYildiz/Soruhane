@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DatabaseCon\Datacon.cs" />
+    <Compile Include="DatabaseCon\LoginClass.cs" />
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +79,7 @@
     <Compile Include="FrmSorumlu.Designer.cs">
       <DependentUpon>FrmSorumlu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global\glbl.cs" />
     <Compile Include="OgrFormlar\FrmAnaliz.cs">
       <SubType>Form</SubType>
     </Compile>

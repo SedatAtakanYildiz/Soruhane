@@ -19,19 +19,22 @@ namespace SoruHane1._4
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            if (RdAdmin.Checked == true)
+            LoginClass lgncls = new LoginClass();
+            if (RdAdmin.Checked == true&& lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 1)==true)
             {
+                ;
+                
                 FrmAdmin adm = new FrmAdmin();
                 adm.Show();
                 this.Hide();
             }
-            else if (RdOgrenci.Checked == true)
+            else if (RdOgrenci.Checked == true && lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 2) == true)
             {
                 FrmOgrenci ogr = new FrmOgrenci();
                 ogr.Show();
                 this.Hide();
             }
-            else if (RdSorumlu.Checked == true)
+            else if (RdSorumlu.Checked == true&& lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 3) == true)
             {
                 FrmSorumlu Srm = new FrmSorumlu();
                 Srm.Show();
