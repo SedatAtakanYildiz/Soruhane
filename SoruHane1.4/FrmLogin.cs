@@ -22,19 +22,18 @@ namespace SoruHane1._4
             LoginClass lgncls = new LoginClass();
             if (RdAdmin.Checked == true&& lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 1)==true)
             {
-                ;
                 
                 FrmAdmin adm = new FrmAdmin();
                 adm.Show();
                 this.Hide();
             }
-            else if (RdOgrenci.Checked == true && lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 2) == true)
+            else if (RdOgrenci.Checked == true && lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 3) == true)
             {
                 FrmOgrenci ogr = new FrmOgrenci();
                 ogr.Show();
                 this.Hide();
             }
-            else if (RdSorumlu.Checked == true&& lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 3) == true)
+            else if (RdSorumlu.Checked == true&& lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 2) == true)
             {
                 FrmSorumlu Srm = new FrmSorumlu();
                 Srm.Show();

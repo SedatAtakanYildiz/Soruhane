@@ -11,6 +11,7 @@ namespace SoruHane1._4
         public int MyProperty { get; set; }
         public bool QueryLogin(string kullaniciadi, string sifre, int tipi)
         {
+            //sql'de procedure çalıştırıp gönderilen parametre bilgilerinde kullanıcı olup olmadığı döndürür
             SqlCommand komut = new SqlCommand("exec LoginQuery @p1,@p2,@p3", Datacon.baglanti());
             komut.Parameters.AddWithValue("@p1", tipi);
             komut.Parameters.AddWithValue("@p2", kullaniciadi);
