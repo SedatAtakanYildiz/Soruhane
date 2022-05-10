@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D3DA81C-C159-4F9E-B5FD-16D4064E3334}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SoruHane1._4</RootNamespace>
+    <AssemblyName>SoruHane1.4</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKayit.Designer.cs">
+      <DependentUpon>FrmKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenci.Designer.cs">
+      <DependentUpon>FrmOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSorumlu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSorumlu.Designer.cs">
+      <DependentUpon>FrmSorumlu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrFormlar\FrmAnaliz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrFormlar\FrmAnaliz.Designer.cs">
+      <DependentUpon>FrmAnaliz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrFormlar\FrmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrFormlar\FrmAyarlar.Designer.cs">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrFormlar\FrmSerbestSinav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrFormlar\FrmSerbestSinav.Designer.cs">
+      <DependentUpon>FrmSerbestSinav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrFormlar\FrmSinav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrFormlar\FrmSinav.Designer.cs">
+      <DependentUpon>FrmSinav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemaRengi.cs" />
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKayit.resx">
+      <DependentUpon>FrmKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenci.resx">
+      <DependentUpon>FrmOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSorumlu.resx">
+      <DependentUpon>FrmSorumlu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrFormlar\FrmAnaliz.resx">
+      <DependentUpon>FrmAnaliz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrFormlar\FrmAyarlar.resx">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrFormlar\FrmSerbestSinav.resx">
+      <DependentUpon>FrmSerbestSinav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrFormlar\FrmSinav.resx">
+      <DependentUpon>FrmSinav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
