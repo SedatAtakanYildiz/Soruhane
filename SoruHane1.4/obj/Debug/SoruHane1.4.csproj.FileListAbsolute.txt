@@ -72,3 +72,4 @@ C:\Users\atknm\Downloads\gitt\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csp
 C:\Users\atknm\Downloads\gitt\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.CoreCompileInputs.cache
 C:\Users\atknm\Downloads\gitt\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.exe
 C:\Users\atknm\Downloads\gitt\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.pdb
+C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.SuggestedBindingRedirects.cache
