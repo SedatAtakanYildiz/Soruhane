@@ -30,22 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdmin));
             this.panelAna = new System.Windows.Forms.Panel();
-            this.panelBaslik = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BtnFormKapa = new System.Windows.Forms.Button();
-            this.LblBaslik = new System.Windows.Forms.Label();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelKullanici = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelBaslik = new System.Windows.Forms.Panel();
+            this.btnCikis = new System.Windows.Forms.Button();
+            this.BtnFormKapa = new System.Windows.Forms.Button();
+            this.LblBaslik = new System.Windows.Forms.Label();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnAyarlar = new System.Windows.Forms.Button();
+            this.btnSoruEkle = new System.Windows.Forms.Button();
+            this.panelKullanici = new System.Windows.Forms.Panel();
+            this.lblSoyisim = new System.Windows.Forms.Label();
+            this.lblIsim = new System.Windows.Forms.Label();
             this.panelAna.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBaslik.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelKullanici.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelAna
@@ -61,98 +63,6 @@
             this.panelAna.Name = "panelAna";
             this.panelAna.Size = new System.Drawing.Size(938, 526);
             this.panelAna.TabIndex = 5;
-            // 
-            // panelBaslik
-            // 
-            this.panelBaslik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panelBaslik.Controls.Add(this.button1);
-            this.panelBaslik.Controls.Add(this.BtnFormKapa);
-            this.panelBaslik.Controls.Add(this.LblBaslik);
-            this.panelBaslik.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBaslik.Location = new System.Drawing.Point(220, 0);
-            this.panelBaslik.Name = "panelBaslik";
-            this.panelBaslik.Size = new System.Drawing.Size(938, 100);
-            this.panelBaslik.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(899, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 39);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // BtnFormKapa
-            // 
-            this.BtnFormKapa.Dock = System.Windows.Forms.DockStyle.Left;
-            this.BtnFormKapa.FlatAppearance.BorderSize = 0;
-            this.BtnFormKapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFormKapa.Image = ((System.Drawing.Image)(resources.GetObject("BtnFormKapa.Image")));
-            this.BtnFormKapa.Location = new System.Drawing.Point(0, 0);
-            this.BtnFormKapa.Name = "BtnFormKapa";
-            this.BtnFormKapa.Size = new System.Drawing.Size(81, 100);
-            this.BtnFormKapa.TabIndex = 4;
-            this.BtnFormKapa.UseVisualStyleBackColor = true;
-            // 
-            // LblBaslik
-            // 
-            this.LblBaslik.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblBaslik.AutoSize = true;
-            this.LblBaslik.BackColor = System.Drawing.Color.Transparent;
-            this.LblBaslik.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblBaslik.ForeColor = System.Drawing.Color.White;
-            this.LblBaslik.Location = new System.Drawing.Point(355, 35);
-            this.LblBaslik.Name = "LblBaslik";
-            this.LblBaslik.Size = new System.Drawing.Size(184, 37);
-            this.LblBaslik.TabIndex = 0;
-            this.LblBaslik.Text = "ANA SAYFA";
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.panelKullanici);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 626);
-            this.panelMenu.TabIndex = 3;
-            // 
-            // panelKullanici
-            // 
-            this.panelKullanici.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelKullanici.Controls.Add(this.label2);
-            this.panelKullanici.Controls.Add(this.label1);
-            this.panelKullanici.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelKullanici.Location = new System.Drawing.Point(0, 0);
-            this.panelKullanici.Name = "panelKullanici";
-            this.panelKullanici.Size = new System.Drawing.Size(220, 100);
-            this.panelKullanici.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(68, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "YILDIZ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(46, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sedat Atakan";
             // 
             // label5
             // 
@@ -189,6 +99,139 @@
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
             // 
+            // panelBaslik
+            // 
+            this.panelBaslik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelBaslik.Controls.Add(this.btnCikis);
+            this.panelBaslik.Controls.Add(this.BtnFormKapa);
+            this.panelBaslik.Controls.Add(this.LblBaslik);
+            this.panelBaslik.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBaslik.Location = new System.Drawing.Point(220, 0);
+            this.panelBaslik.Name = "panelBaslik";
+            this.panelBaslik.Size = new System.Drawing.Size(938, 100);
+            this.panelBaslik.TabIndex = 4;
+            // 
+            // btnCikis
+            // 
+            this.btnCikis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCikis.FlatAppearance.BorderSize = 0;
+            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
+            this.btnCikis.Location = new System.Drawing.Point(899, 0);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(36, 39);
+            this.btnCikis.TabIndex = 5;
+            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
+            // BtnFormKapa
+            // 
+            this.BtnFormKapa.Dock = System.Windows.Forms.DockStyle.Left;
+            this.BtnFormKapa.FlatAppearance.BorderSize = 0;
+            this.BtnFormKapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFormKapa.Image = ((System.Drawing.Image)(resources.GetObject("BtnFormKapa.Image")));
+            this.BtnFormKapa.Location = new System.Drawing.Point(0, 0);
+            this.BtnFormKapa.Name = "BtnFormKapa";
+            this.BtnFormKapa.Size = new System.Drawing.Size(81, 100);
+            this.BtnFormKapa.TabIndex = 4;
+            this.BtnFormKapa.UseVisualStyleBackColor = true;
+            // 
+            // LblBaslik
+            // 
+            this.LblBaslik.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblBaslik.AutoSize = true;
+            this.LblBaslik.BackColor = System.Drawing.Color.Transparent;
+            this.LblBaslik.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblBaslik.ForeColor = System.Drawing.Color.White;
+            this.LblBaslik.Location = new System.Drawing.Point(355, 35);
+            this.LblBaslik.Name = "LblBaslik";
+            this.LblBaslik.Size = new System.Drawing.Size(184, 37);
+            this.LblBaslik.TabIndex = 0;
+            this.LblBaslik.Text = "ANA SAYFA";
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.btnAyarlar);
+            this.panelMenu.Controls.Add(this.btnSoruEkle);
+            this.panelMenu.Controls.Add(this.panelKullanici);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(220, 626);
+            this.panelMenu.TabIndex = 3;
+            // 
+            // btnAyarlar
+            // 
+            this.btnAyarlar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAyarlar.FlatAppearance.BorderSize = 0;
+            this.btnAyarlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAyarlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAyarlar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAyarlar.Image = ((System.Drawing.Image)(resources.GetObject("btnAyarlar.Image")));
+            this.btnAyarlar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAyarlar.Location = new System.Drawing.Point(0, 160);
+            this.btnAyarlar.Name = "btnAyarlar";
+            this.btnAyarlar.Size = new System.Drawing.Size(220, 60);
+            this.btnAyarlar.TabIndex = 6;
+            this.btnAyarlar.Text = "   Hesap Ayarları";
+            this.btnAyarlar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAyarlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAyarlar.UseVisualStyleBackColor = true;
+            this.btnAyarlar.Click += new System.EventHandler(this.btnAyarlar_Click);
+            // 
+            // btnSoruEkle
+            // 
+            this.btnSoruEkle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSoruEkle.FlatAppearance.BorderSize = 0;
+            this.btnSoruEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSoruEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSoruEkle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSoruEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnSoruEkle.Image")));
+            this.btnSoruEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSoruEkle.Location = new System.Drawing.Point(0, 100);
+            this.btnSoruEkle.Name = "btnSoruEkle";
+            this.btnSoruEkle.Size = new System.Drawing.Size(220, 60);
+            this.btnSoruEkle.TabIndex = 3;
+            this.btnSoruEkle.Text = "   Soru Onayla";
+            this.btnSoruEkle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSoruEkle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSoruEkle.UseVisualStyleBackColor = true;
+            this.btnSoruEkle.Click += new System.EventHandler(this.btnSoruEkle_Click);
+            // 
+            // panelKullanici
+            // 
+            this.panelKullanici.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelKullanici.Controls.Add(this.lblSoyisim);
+            this.panelKullanici.Controls.Add(this.lblIsim);
+            this.panelKullanici.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelKullanici.Location = new System.Drawing.Point(0, 0);
+            this.panelKullanici.Name = "panelKullanici";
+            this.panelKullanici.Size = new System.Drawing.Size(220, 100);
+            this.panelKullanici.TabIndex = 1;
+            // 
+            // lblSoyisim
+            // 
+            this.lblSoyisim.AutoSize = true;
+            this.lblSoyisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSoyisim.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblSoyisim.Location = new System.Drawing.Point(68, 48);
+            this.lblSoyisim.Name = "lblSoyisim";
+            this.lblSoyisim.Size = new System.Drawing.Size(59, 20);
+            this.lblSoyisim.TabIndex = 1;
+            this.lblSoyisim.Text = "YILDIZ";
+            // 
+            // lblIsim
+            // 
+            this.lblIsim.AutoSize = true;
+            this.lblIsim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblIsim.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblIsim.Location = new System.Drawing.Point(46, 19);
+            this.lblIsim.Name = "lblIsim";
+            this.lblIsim.Size = new System.Drawing.Size(108, 20);
+            this.lblIsim.TabIndex = 0;
+            this.lblIsim.Text = "Sedat Atakan";
+            // 
             // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -201,12 +244,12 @@
             this.Text = "FrmAdmin";
             this.panelAna.ResumeLayout(false);
             this.panelAna.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBaslik.ResumeLayout(false);
             this.panelBaslik.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelKullanici.ResumeLayout(false);
             this.panelKullanici.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -218,12 +261,14 @@
         private System.Windows.Forms.Label LblBaslik;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelKullanici;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSoyisim;
+        private System.Windows.Forms.Label lblIsim;
         private System.Windows.Forms.Button BtnFormKapa;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnSoruEkle;
+        private System.Windows.Forms.Button btnAyarlar;
     }
 }

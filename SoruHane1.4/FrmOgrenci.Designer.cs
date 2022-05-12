@@ -30,21 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOgrenci));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnHesapAyarlari = new System.Windows.Forms.Button();
             this.btnAyarlar = new System.Windows.Forms.Button();
             this.btnAnaliz = new System.Windows.Forms.Button();
             this.btnSerbestSinav = new System.Windows.Forms.Button();
             this.btnSinav = new System.Windows.Forms.Button();
             this.panelKullanici = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSoyisim = new System.Windows.Forms.Label();
+            this.lblIsim = new System.Windows.Forms.Label();
             this.panelBaslik = new System.Windows.Forms.Panel();
+            this.btnCikis = new System.Windows.Forms.Button();
+            this.BtnFormKapa = new System.Windows.Forms.Button();
             this.LblBaslik = new System.Windows.Forms.Label();
             this.panelAna = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnFormKapa = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelKullanici.SuspendLayout();
             this.panelBaslik.SuspendLayout();
@@ -55,6 +56,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.btnHesapAyarlari);
             this.panelMenu.Controls.Add(this.btnAyarlar);
             this.panelMenu.Controls.Add(this.btnAnaliz);
             this.panelMenu.Controls.Add(this.btnSerbestSinav);
@@ -65,6 +67,25 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 627);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btnHesapAyarlari
+            // 
+            this.btnHesapAyarlari.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHesapAyarlari.FlatAppearance.BorderSize = 0;
+            this.btnHesapAyarlari.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHesapAyarlari.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHesapAyarlari.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnHesapAyarlari.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapAyarlari.Image")));
+            this.btnHesapAyarlari.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHesapAyarlari.Location = new System.Drawing.Point(0, 340);
+            this.btnHesapAyarlari.Name = "btnHesapAyarlari";
+            this.btnHesapAyarlari.Size = new System.Drawing.Size(220, 60);
+            this.btnHesapAyarlari.TabIndex = 5;
+            this.btnHesapAyarlari.Text = "   Hesap Ayarları";
+            this.btnHesapAyarlari.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHesapAyarlari.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHesapAyarlari.UseVisualStyleBackColor = true;
+            this.btnHesapAyarlari.Click += new System.EventHandler(this.btnHesapAyarlari_Click);
             // 
             // btnAyarlar
             // 
@@ -79,7 +100,7 @@
             this.btnAyarlar.Name = "btnAyarlar";
             this.btnAyarlar.Size = new System.Drawing.Size(220, 60);
             this.btnAyarlar.TabIndex = 4;
-            this.btnAyarlar.Text = "   Ayarlar";
+            this.btnAyarlar.Text = "   Soru Ayarları";
             this.btnAyarlar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAyarlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAyarlar.UseVisualStyleBackColor = true;
@@ -145,40 +166,40 @@
             // panelKullanici
             // 
             this.panelKullanici.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelKullanici.Controls.Add(this.label2);
-            this.panelKullanici.Controls.Add(this.label1);
+            this.panelKullanici.Controls.Add(this.lblSoyisim);
+            this.panelKullanici.Controls.Add(this.lblIsim);
             this.panelKullanici.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelKullanici.Location = new System.Drawing.Point(0, 0);
             this.panelKullanici.Name = "panelKullanici";
             this.panelKullanici.Size = new System.Drawing.Size(220, 100);
             this.panelKullanici.TabIndex = 1;
             // 
-            // label2
+            // lblSoyisim
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(68, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "YILDIZ";
+            this.lblSoyisim.AutoSize = true;
+            this.lblSoyisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSoyisim.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblSoyisim.Location = new System.Drawing.Point(68, 48);
+            this.lblSoyisim.Name = "lblSoyisim";
+            this.lblSoyisim.Size = new System.Drawing.Size(59, 20);
+            this.lblSoyisim.TabIndex = 1;
+            this.lblSoyisim.Text = "YILDIZ";
             // 
-            // label1
+            // lblIsim
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(46, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sedat Atakan";
+            this.lblIsim.AutoSize = true;
+            this.lblIsim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblIsim.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblIsim.Location = new System.Drawing.Point(46, 19);
+            this.lblIsim.Name = "lblIsim";
+            this.lblIsim.Size = new System.Drawing.Size(108, 20);
+            this.lblIsim.TabIndex = 0;
+            this.lblIsim.Text = "Sedat Atakan";
             // 
             // panelBaslik
             // 
             this.panelBaslik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panelBaslik.Controls.Add(this.button1);
+            this.panelBaslik.Controls.Add(this.btnCikis);
             this.panelBaslik.Controls.Add(this.BtnFormKapa);
             this.panelBaslik.Controls.Add(this.LblBaslik);
             this.panelBaslik.Dock = System.Windows.Forms.DockStyle.Top;
@@ -186,6 +207,32 @@
             this.panelBaslik.Name = "panelBaslik";
             this.panelBaslik.Size = new System.Drawing.Size(954, 100);
             this.panelBaslik.TabIndex = 1;
+            // 
+            // btnCikis
+            // 
+            this.btnCikis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCikis.FlatAppearance.BorderSize = 0;
+            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
+            this.btnCikis.Location = new System.Drawing.Point(914, 0);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(40, 39);
+            this.btnCikis.TabIndex = 6;
+            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
+            // BtnFormKapa
+            // 
+            this.BtnFormKapa.Dock = System.Windows.Forms.DockStyle.Left;
+            this.BtnFormKapa.FlatAppearance.BorderSize = 0;
+            this.BtnFormKapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFormKapa.Image = ((System.Drawing.Image)(resources.GetObject("BtnFormKapa.Image")));
+            this.BtnFormKapa.Location = new System.Drawing.Point(0, 0);
+            this.BtnFormKapa.Name = "BtnFormKapa";
+            this.BtnFormKapa.Size = new System.Drawing.Size(81, 100);
+            this.BtnFormKapa.TabIndex = 1;
+            this.BtnFormKapa.UseVisualStyleBackColor = true;
+            this.BtnFormKapa.Click += new System.EventHandler(this.BtnFormKapa_Click);
             // 
             // LblBaslik
             // 
@@ -252,32 +299,6 @@
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
-            // BtnFormKapa
-            // 
-            this.BtnFormKapa.Dock = System.Windows.Forms.DockStyle.Left;
-            this.BtnFormKapa.FlatAppearance.BorderSize = 0;
-            this.BtnFormKapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFormKapa.Image = ((System.Drawing.Image)(resources.GetObject("BtnFormKapa.Image")));
-            this.BtnFormKapa.Location = new System.Drawing.Point(0, 0);
-            this.BtnFormKapa.Name = "BtnFormKapa";
-            this.BtnFormKapa.Size = new System.Drawing.Size(81, 100);
-            this.BtnFormKapa.TabIndex = 1;
-            this.BtnFormKapa.UseVisualStyleBackColor = true;
-            this.BtnFormKapa.Click += new System.EventHandler(this.BtnFormKapa_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(914, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 39);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FrmOgrenci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -314,13 +335,14 @@
         private System.Windows.Forms.Panel panelKullanici;
         private System.Windows.Forms.Panel panelBaslik;
         private System.Windows.Forms.Label LblBaslik;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSoyisim;
+        private System.Windows.Forms.Label lblIsim;
         private System.Windows.Forms.Panel panelAna;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnFormKapa;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.Button btnHesapAyarlari;
     }
 }

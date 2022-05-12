@@ -89,29 +89,7 @@ namespace SoruHane1._4
             yeniForm.Show();
 
         }
-        private void btnSinav_Click_1(object sender, EventArgs e)
-        {
-            LblBaslik.Text = "SINAV";
-            YeniFormAc(new OgrFormlar.FrmSinav(),sender);
-        }
-
-        private void btnSerbestSinav_Click_1(object sender, EventArgs e)
-        {
-            LblBaslik.Text = "SERBEST SINAV";
-            YeniFormAc(new OgrFormlar.FrmSerbestSinav(), sender);   
-        }
-
-        private void btnAnaliz_Click_1(object sender, EventArgs e)
-        {
-            LblBaslik.Text = "ANALİZ";
-            YeniFormAc(new OgrFormlar.FrmAnaliz(), sender);            
-        }
-
-        private void btnAyarlar_Click_1(object sender, EventArgs e)
-        {
-            LblBaslik.Text = "AYARLAR";
-            YeniFormAc(new OgrFormlar.FrmAyarlar(), sender);            
-        }
+       
 
         private void BtnFormKapa_Click(object sender, EventArgs e)
         {
@@ -131,10 +109,42 @@ namespace SoruHane1._4
             gecerliBtn = null;
             BtnFormKapa.Visible = false;
         }
+        
+        //butonlar
+    
+        private void btnSinav_Click_1(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "SINAV";
+            YeniFormAc(new OgrFormlar.FrmSinav(), sender);
+        }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSerbestSinav_Click_1(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "SERBEST SINAV";
+            YeniFormAc(new OgrFormlar.FrmSerbestSinav(), sender);
+        }
+
+        private void btnAnaliz_Click_1(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "ANALİZ";
+            YeniFormAc(new OgrFormlar.FrmAnaliz(), sender);
+        }
+
+        private void btnAyarlar_Click_1(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "ZAMAN AYARLARI";
+            YeniFormAc(new OgrFormlar.FrmAyarlar(), sender);
+        }
+        private void btnHesapAyarlari_Click(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "HESAP AYARLARI";
+            YeniFormAc(new SorumluFormlari.frmAyarlar(), sender);
+        }
+        private void btnCikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        
     }
 }
