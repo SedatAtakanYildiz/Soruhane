@@ -19,7 +19,7 @@ namespace SoruHane1._4
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            LoginClass lgncls = new LoginClass();
+            QueryClass lgncls = new QueryClass();
             if (RdAdmin.Checked == true&& lgncls.QueryLogin(textKullanici.Text, textSifre.Text, 1)==true)
             {
                 
