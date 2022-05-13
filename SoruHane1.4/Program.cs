@@ -16,7 +16,7 @@ namespace SoruHane1._4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            Application.Run(new FrmOgrenci());
         }
     }
 }

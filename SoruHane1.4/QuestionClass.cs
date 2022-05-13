@@ -18,8 +18,8 @@ namespace SoruHane1._4
         public string AnswerD { get; set; }
         public int UnitId { get; set; }
         public int IsOk { get; set; }   
-        public char AnswerCorrect { get; set; } 
-
+        public char AnswerCorrect { get; set; }
+        public char AnswerStudent { get; set; }
         public bool QuestionAdd()
         {
             SqlCommand komut = new SqlCommand("exec AddQuestion @path,@qtext,@AnswerA,@AnswerB,@AnswerC,@Answerd,@unitid,@isOk,@AnswerCorrect", Datacon.baglanti());
