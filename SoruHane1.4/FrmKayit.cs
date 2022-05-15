@@ -24,9 +24,25 @@ namespace SoruHane1._4
 
         private void BtnKayıt_Click(object sender, EventArgs e)
         {
-            FrmLogin Lgn = new FrmLogin();
-            Lgn.Show();
-            this.Close();
+            RegisterClass rgstrc =new RegisterClass();
+            rgstrc.UserName = textIsim.Text;
+            rgstrc.UserSurname=textSoyIsim.Text;
+            rgstrc.UserNickName = textKullaniciAd.Text;
+            rgstrc.UserPass=textSifre.Text;
+            rgstrc.UserMail = textEposta.Text;
+            rgstrc.UserTypeId = 3;
+            if(rgstrc.QueryRegister()==true)
+            {
+                FrmLogin Lgn = new FrmLogin();
+                Lgn.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Hata oluştu lütfen daha sonra tekrar deneyiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            
         }
     }
 }

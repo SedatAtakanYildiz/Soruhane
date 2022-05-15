@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace SoruHane1._4.SorumluFormlari
 {
     public partial class frmSoruEkleme : Form
     {
         //alanlar
-        private char dogruCevap; 
+        private char dogruCevap;
+        private string IMGYolu = "";
+        List<int> Unitids = new List<int>();// Veritabanından Soru ünitelerinin ID'lerini listelemek için 
+        QuestionClass ques=new QuestionClass(); 
         public frmSoruEkleme()
         {
             InitializeComponent();
@@ -94,9 +97,45 @@ namespace SoruHane1._4.SorumluFormlari
                 //UMUTA NOT!!!!!!!!!!
                 //doğru Cevap diye bir char değişkeni var yukarda onu kullan
                 //sql kodlarını bunun üstüne yaz temizlenin altında kalırsa soru silinir (notu okuduktan sonra bu açıklamayı siliniz)
-                MessageBox.Show("Sorunuz Başarıyla eklenmiştir", "İşlem Onaylandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ques.QuestionText = TxtSoru.Text;
+                ques.AnswerA = TxtA.Text;
+                ques.AnswerB = txtB.Text;
+                ques.AnswerC = txtC.Text;
+                ques.AnswerD = TxtD.Text;
+                ques.QuestionImgPath = IMGYolu;
+                ques.UnitId = Convert.ToInt16(Unitids[cmbUnute.SelectedIndex]);
+                ques.AnswerCorrect = dogruCevap;
+                if (ques.QuestionAdd() == true)
+                    MessageBox.Show("Sorunuz Başarıyla eklenmiştir", "İşlem Onaylandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Eklenemedi");
                 temizle();
             }
+        }
+
+        private void btnFotoEkle_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            pictureSoruResmi.ImageLocation = openFileDialog1.FileName;
+            IMGYolu= openFileDialog1.FileName;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmSoruEkleme_Load(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("select * from tblunit", Datacon.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                Unitids.Add(Convert.ToInt16(dr[0])); // Oluşturlan @Unitids listesine Veritabanından gelen Ünitelerin Id'si aktarılır
+                cmbUnute.Items.Add(dr[1].ToString());  // Veritabanından Gelen Ünitenin Adı combobox'a aktarılır
+            }
+            cmbUnute.SelectedIndex = 0;
+            Datacon.baglanti().Close();
         }
     }
 }
