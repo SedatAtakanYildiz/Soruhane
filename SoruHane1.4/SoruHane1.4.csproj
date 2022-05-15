@@ -62,7 +62,10 @@
     </Compile>
     <Compile Include="DatabaseCon\Datacon.cs" />
     <Compile Include="DatabaseCon\QueryClass.cs" />
+<<<<<<< HEAD
     <Compile Include="ExamClass.cs" />
+=======
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>

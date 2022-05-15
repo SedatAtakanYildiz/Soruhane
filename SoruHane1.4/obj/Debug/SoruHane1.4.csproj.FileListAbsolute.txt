@@ -136,4 +136,7 @@ C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\bin\Debug\es\DevExpress.Pdf.v
 C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\bin\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.SuggestedBindingRedirects.cache
+=======
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7

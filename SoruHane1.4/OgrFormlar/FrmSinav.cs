@@ -15,7 +15,11 @@ namespace SoruHane1._4.OgrFormlar
     public partial class FrmSinav : Form
     {
         private char ogrenciCevap;
+<<<<<<< HEAD
         private int soruSira=0;
+=======
+        private int soruSira=1;
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
         public FrmSinav()
         {
             InitializeComponent();
@@ -24,7 +28,11 @@ namespace SoruHane1._4.OgrFormlar
         private void FrmSinav_Load(object sender, EventArgs e)
         {
            
+<<<<<<< HEAD
             SqlCommand komut = new SqlCommand("SELECT TOP 10 * FROM tblquestions ORDER BY NEWID()", Datacon.baglanti());
+=======
+            SqlCommand komut = new SqlCommand("SELECT TOP 7 * FROM tblquestions ORDER BY NEWID()", Datacon.baglanti());
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
             {
@@ -39,6 +47,10 @@ namespace SoruHane1._4.OgrFormlar
                     s.AnswerC = Convert.ToString(dr[5]);
                     s.AnswerD = Convert.ToString(dr[6]);
                     s.AnswerCorrect = Convert.ToChar(dr[9]);
+<<<<<<< HEAD
+=======
+                    s.AnswerCorrect = Convert.ToChar(dr[9]);
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
                     soru.Add(s);
                 }
                 Datacon.baglanti().Close();
@@ -47,14 +59,38 @@ namespace SoruHane1._4.OgrFormlar
             {
                 Datacon.baglanti().Close();
             }
+<<<<<<< HEAD
 
             TxtSoru.Text = soruSira + 1 + "-)" + soru[soruSira].QuestionText;
+=======
+            TxtSoru.Text = soruSira + "-)" + soru[soruSira].QuestionText;
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
             BtnA.Text = soruSira + "-)" + soru[soruSira].AnswerA;
             btnB.Text = soruSira + "-)" + soru[soruSira].AnswerB;
             BtnC.Text = soruSira + "-)" + soru[soruSira].AnswerC;
             BtnD.Text = soruSira + "-)" + soru[soruSira].AnswerD;
             pictureSoru.ImageLocation = soru[soruSira].QuestionImgPath;
+<<<<<<< HEAD
             soruSira++;
+=======
+            //MessageBox.Show("Soru Id: " + soru[0].QuestionId + "\n" +
+            //        "Soru Yazısı: " + soru[0].QuestionText + "\n" +
+            //        "Soru Fotoğraf yolu: " + soru[0].QuestionImgPath + "\n" +
+            //        "A şıkı: " + soru[0].AnswerA + "\n" +
+            //        "B şıkı:: " + soru[0].AnswerB + "\n" +
+            //        "C şıkı: " + soru[0].AnswerC + "\n" +
+            //        "D şıkı:: " + soru[0].AnswerD + "\n");
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    MessageBox.Show("Soru Id: " + soru[i].QuestionId + "\n" +
+            //        "Soru Yazısı: " + soru[i].QuestionText + "\n" +
+            //        "Soru Fotoğraf yolu: " + soru[i].QuestionImgPath + "\n" +
+            //        "A şıkı: " + soru[i].AnswerA + "\n" +
+            //        "B şıkı:: " + soru[i].AnswerB + "\n" +
+            //        "C şıkı: " + soru[i].AnswerC + "\n" +
+            //        "D şıkı:: " + soru[i].AnswerD + "\n");
+            //}
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
 
         }
 
@@ -80,17 +116,25 @@ namespace SoruHane1._4.OgrFormlar
 
         private void BtnSinavilerle_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
             soru[soruSira - 1].AnswerStudent = ogrenciCevap;
             if (soruSira<soru.Count)
             {
                 TxtSoru.Text = soruSira +1 + "-)" + soru[soruSira].QuestionText;
+=======
+            soruSira++;
+            if(soruSira<5)
+            {
+                TxtSoru.Text = soruSira + "-)" + soru[soruSira].QuestionText;
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
                 BtnA.Text = soru[soruSira].AnswerA;
                 btnB.Text = soru[soruSira].AnswerB;
                 BtnC.Text = soru[soruSira].AnswerC;
                 BtnD.Text = soru[soruSira].AnswerD;
                 pictureSoru.ImageLocation = soru[soruSira].QuestionImgPath;
             }
+<<<<<<< HEAD
             else
             {
                 
@@ -150,6 +194,9 @@ namespace SoruHane1._4.OgrFormlar
             BtnC.Text = soruSira + "-)" + soru[soruSira].AnswerC;
             BtnD.Text = soruSira + "-)" + soru[soruSira].AnswerD;
             pictureSoru.ImageLocation = soru[soruSira].QuestionImgPath;
+=======
+          
+>>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
         }
     }
 }
