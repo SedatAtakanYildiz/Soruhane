@@ -38,12 +38,7 @@
             this.BtnA = new System.Windows.Forms.Button();
             this.TxtSoru = new System.Windows.Forms.RichTextBox();
             this.pictureSoru = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
             this.BtnSinavBasla = new DevExpress.XtraEditors.SimpleButton();
-=======
-            this.BtnSinavilerle = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnSinavBitir = new DevExpress.XtraEditors.SimpleButton();
->>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSoru)).BeginInit();
             this.SuspendLayout();
@@ -51,10 +46,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-<<<<<<< HEAD
             this.panel1.Controls.Add(this.BtnSinavBasla);
-=======
->>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
             this.panel1.Controls.Add(this.BtnSinavBitir);
             this.panel1.Controls.Add(this.BtnSinavilerle);
             this.panel1.Controls.Add(this.BtnD);
@@ -197,7 +189,6 @@
             this.pictureSoru.TabIndex = 0;
             this.pictureSoru.TabStop = false;
             // 
-<<<<<<< HEAD
             // BtnSinavBasla
             // 
             this.BtnSinavBasla.Location = new System.Drawing.Point(622, 241);
@@ -206,24 +197,6 @@
             this.BtnSinavBasla.TabIndex = 8;
             this.BtnSinavBasla.Text = "Sınav\'a Başla";
             this.BtnSinavBasla.Click += new System.EventHandler(this.BtnSinavBasla_Click);
-=======
-            // BtnSinavilerle
-            // 
-            this.BtnSinavilerle.Location = new System.Drawing.Point(378, 400);
-            this.BtnSinavilerle.Name = "BtnSinavilerle";
-            this.BtnSinavilerle.Size = new System.Drawing.Size(133, 46);
-            this.BtnSinavilerle.TabIndex = 6;
-            this.BtnSinavilerle.Text = "Sonraki Soru";
-            this.BtnSinavilerle.Click += new System.EventHandler(this.BtnSinavilerle_Click);
-            // 
-            // BtnSinavBitir
-            // 
-            this.BtnSinavBitir.Location = new System.Drawing.Point(517, 400);
-            this.BtnSinavBitir.Name = "BtnSinavBitir";
-            this.BtnSinavBitir.Size = new System.Drawing.Size(133, 46);
-            this.BtnSinavBitir.TabIndex = 7;
-            this.BtnSinavBitir.Text = "Sınavı Bitir";
->>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
             // 
             // FrmSinav
             // 
@@ -253,9 +226,6 @@
         private System.Windows.Forms.PictureBox pictureSoru;
         private DevExpress.XtraEditors.SimpleButton BtnSinavilerle;
         private DevExpress.XtraEditors.SimpleButton BtnSinavBitir;
-<<<<<<< HEAD
         private DevExpress.XtraEditors.SimpleButton BtnSinavBasla;
-=======
->>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
     }
 }
