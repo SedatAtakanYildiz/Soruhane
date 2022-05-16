@@ -86,15 +86,7 @@ namespace SoruHane1._4
             yeniForm.Show();
 
         }
-        private void BtnFormKapa_Click(object sender, EventArgs e)
-        {
-            if (aktifForm != null)
-            {
-                aktifForm.Close();
-            }
-            Reset();
-        }
-
+        
         private void Reset()
         {
             varsayilanDon();
@@ -120,6 +112,15 @@ namespace SoruHane1._4
         private void btnCikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnFormKapa_Click_1(object sender, EventArgs e)
+        {
+            if (aktifForm != null)
+            {
+                aktifForm.Close();
+            }
+            Reset();
         }
     }
 }

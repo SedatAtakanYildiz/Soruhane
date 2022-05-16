@@ -36,7 +36,7 @@ namespace SoruHane1._4
             komut.Parameters.AddWithValue("@p1", glblclass.OnlineUserId);
             komut.Parameters.AddWithValue("@p2", YeniSifre);
             int dr = komut.ExecuteNonQuery();
-            if (dr != null)
+            if (dr != 0)
             {
                 Datacon.baglanti().Close();
                 return true;

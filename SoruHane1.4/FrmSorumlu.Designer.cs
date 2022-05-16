@@ -34,8 +34,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBaslik = new System.Windows.Forms.Panel();
-            this.btnCikis = new System.Windows.Forms.Button();
             this.BtnFormKapa = new System.Windows.Forms.Button();
+            this.btnCikis = new System.Windows.Forms.Button();
             this.LblBaslik = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnAyarlar = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             this.panelAna.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAna.Location = new System.Drawing.Point(220, 100);
             this.panelAna.Name = "panelAna";
-            this.panelAna.Size = new System.Drawing.Size(913, 528);
+            this.panelAna.Size = new System.Drawing.Size(935, 528);
             this.panelAna.TabIndex = 5;
             // 
             // label5
@@ -102,27 +102,14 @@
             // panelBaslik
             // 
             this.panelBaslik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panelBaslik.Controls.Add(this.btnCikis);
             this.panelBaslik.Controls.Add(this.BtnFormKapa);
+            this.panelBaslik.Controls.Add(this.btnCikis);
             this.panelBaslik.Controls.Add(this.LblBaslik);
             this.panelBaslik.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBaslik.Location = new System.Drawing.Point(220, 0);
             this.panelBaslik.Name = "panelBaslik";
-            this.panelBaslik.Size = new System.Drawing.Size(913, 100);
+            this.panelBaslik.Size = new System.Drawing.Size(935, 100);
             this.panelBaslik.TabIndex = 4;
-            // 
-            // btnCikis
-            // 
-            this.btnCikis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCikis.FlatAppearance.BorderSize = 0;
-            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
-            this.btnCikis.Location = new System.Drawing.Point(870, 3);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(40, 39);
-            this.btnCikis.TabIndex = 5;
-            this.btnCikis.UseVisualStyleBackColor = true;
-            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // BtnFormKapa
             // 
@@ -132,9 +119,23 @@
             this.BtnFormKapa.Image = ((System.Drawing.Image)(resources.GetObject("BtnFormKapa.Image")));
             this.BtnFormKapa.Location = new System.Drawing.Point(0, 0);
             this.BtnFormKapa.Name = "BtnFormKapa";
-            this.BtnFormKapa.Size = new System.Drawing.Size(81, 100);
-            this.BtnFormKapa.TabIndex = 4;
+            this.BtnFormKapa.Size = new System.Drawing.Size(91, 100);
+            this.BtnFormKapa.TabIndex = 6;
             this.BtnFormKapa.UseVisualStyleBackColor = true;
+            this.BtnFormKapa.Click += new System.EventHandler(this.BtnFormKapa_Click_1);
+            // 
+            // btnCikis
+            // 
+            this.btnCikis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCikis.FlatAppearance.BorderSize = 0;
+            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
+            this.btnCikis.Location = new System.Drawing.Point(882, 3);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(50, 48);
+            this.btnCikis.TabIndex = 5;
+            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // LblBaslik
             // 
@@ -143,7 +144,7 @@
             this.LblBaslik.BackColor = System.Drawing.Color.Transparent;
             this.LblBaslik.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblBaslik.ForeColor = System.Drawing.Color.White;
-            this.LblBaslik.Location = new System.Drawing.Point(342, 35);
+            this.LblBaslik.Location = new System.Drawing.Point(353, 35);
             this.LblBaslik.Name = "LblBaslik";
             this.LblBaslik.Size = new System.Drawing.Size(184, 37);
             this.LblBaslik.TabIndex = 0;
@@ -236,10 +237,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 628);
+            this.ClientSize = new System.Drawing.Size(1155, 628);
             this.Controls.Add(this.panelAna);
             this.Controls.Add(this.panelBaslik);
             this.Controls.Add(this.panelMenu);
+            this.MinimumSize = new System.Drawing.Size(950, 550);
             this.Name = "FrmSorumlu";
             this.Text = "FrmSorumlu";
             this.panelAna.ResumeLayout(false);
@@ -266,9 +268,9 @@
         private System.Windows.Forms.Panel panelKullanici;
         private System.Windows.Forms.Label lblSoyisim;
         private System.Windows.Forms.Label lblIsim;
-        private System.Windows.Forms.Button BtnFormKapa;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Button btnSoruEkle;
         private System.Windows.Forms.Button btnAyarlar;
+        private System.Windows.Forms.Button BtnFormKapa;
     }
 }

@@ -41,7 +41,7 @@ namespace SoruHane1._4
             }
             else
             {
-                MessageBox.Show("Lütfen Bir Kullanıcı Tipi Seçiniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Girdiğiniz bilgiler eksik yada yanlış girilmiştir lütfen tekrar deneyiniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -54,6 +54,13 @@ namespace SoruHane1._4
         {
             FrmKayit Kyt = new FrmKayit();
             Kyt.Show();
+            this.Hide();
+        }
+
+        private void BtnUnuttum_Click(object sender, EventArgs e)
+        {
+            FrmSifremiUnuttum unt = new FrmSifremiUnuttum();
+            unt.Show();
             this.Hide();
         }
     }

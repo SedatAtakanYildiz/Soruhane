@@ -43,6 +43,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminFormlar\FrmAdmin-sorumluKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminFormlar\FrmAdmin-sorumluKayıt.Designer.cs">
+      <DependentUpon>FrmAdmin-sorumluKayıt.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminFormlar\frmSoruOnayla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,10 +69,7 @@
     </Compile>
     <Compile Include="DatabaseCon\Datacon.cs" />
     <Compile Include="DatabaseCon\QueryClass.cs" />
-<<<<<<< HEAD
     <Compile Include="ExamClass.cs" />
-=======
->>>>>>> b5953522bf748b1a20bbab68b7d7ace9aee0f9f7
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +93,12 @@
     </Compile>
     <Compile Include="FrmOgrenci.Designer.cs">
       <DependentUpon>FrmOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifremiUnuttum.Designer.cs">
+      <DependentUpon>FrmSifremiUnuttum.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSorumlu.cs">
       <SubType>Form</SubType>
@@ -139,6 +149,12 @@
     </Compile>
     <Compile Include="TemaRengi.cs" />
     <Compile Include="UserClass.cs" />
+    <EmbeddedResource Include="adminFormlar\FrmAdmin-sorumluKayıt.resx">
+      <DependentUpon>FrmAdmin-sorumluKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminFormlar\frmSoruOnayla.resx">
+      <DependentUpon>frmSoruOnayla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAdmin.resx">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrenci.resx">
       <DependentUpon>FrmOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifremiUnuttum.resx">
+      <DependentUpon>FrmSifremiUnuttum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSorumlu.resx">
       <DependentUpon>FrmSorumlu.cs</DependentUpon>

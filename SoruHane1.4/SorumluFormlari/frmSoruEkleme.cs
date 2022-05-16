@@ -93,10 +93,7 @@ namespace SoruHane1._4.SorumluFormlari
             }
             else
             {
-                //sql kodu alanı else içinde yoksa döngüye giriyor
-                //UMUTA NOT!!!!!!!!!!
-                //doğru Cevap diye bir char değişkeni var yukarda onu kullan
-                //sql kodlarını bunun üstüne yaz temizlenin altında kalırsa soru silinir (notu okuduktan sonra bu açıklamayı siliniz)
+                
                 ques.QuestionText = TxtSoru.Text;
                 ques.AnswerA = TxtA.Text;
                 ques.AnswerB = txtB.Text;
@@ -120,10 +117,6 @@ namespace SoruHane1._4.SorumluFormlari
             IMGYolu= openFileDialog1.FileName;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void frmSoruEkleme_Load(object sender, EventArgs e)
         {

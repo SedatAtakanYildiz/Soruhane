@@ -85,15 +85,7 @@ namespace SoruHane1._4
             yeniForm.Show();
 
         }
-        private void BtnFormKapa_Click(object sender, EventArgs e)
-        {
-            if (aktifForm != null)
-            {
-                aktifForm.Close();
-            }
-            Reset();
-        }
-
+        
         private void Reset()
         {
             varsayilanDon();
@@ -118,6 +110,21 @@ namespace SoruHane1._4
         {
             LblBaslik.Text = "HESAP AYARLARI";
             YeniFormAc(new SorumluFormlari.frmAyarlar(), sender);
+        }
+
+        private void btnKayıt_Click(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "KAYIT";
+            YeniFormAc(new adminFormlar.FrmAdmin_sorumuKayıt(), sender);
+        }
+
+        private void BtnFormKapa_Click_1(object sender, EventArgs e)
+        {
+            if (aktifForm != null)
+            {
+                aktifForm.Close();
+            }
+            Reset();
         }
     }
 }

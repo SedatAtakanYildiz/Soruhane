@@ -16,5 +16,17 @@ namespace SoruHane1._4.adminFormlar
         {
             InitializeComponent();
         }
+
+        private void btnSoruGor_Click(object sender, EventArgs e)
+        {
+            btnSoruGor.Visible = false;
+            BtnA.Visible = true;
+            btnB.Visible = true;
+            BtnC.Visible = true;
+            BtnD.Visible = true;
+            btnOnaylama.Visible = true;
+            BtnOnay.Visible = true;
+            btnBitir.Visible = true;
+        }
     }
 }

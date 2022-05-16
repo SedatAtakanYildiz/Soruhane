@@ -22,7 +22,7 @@ namespace SoruHane1._4
             komut.Parameters.AddWithValue("@p6", UserMail);
             komut.Parameters.AddWithValue("@p7", 0);
             int dr = komut.ExecuteNonQuery();
-            if (dr != null)
+            if (dr != 0)
             {
                 Datacon.baglanti().Close();
                 return true;

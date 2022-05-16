@@ -65,7 +65,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 627);
+            this.panelMenu.Size = new System.Drawing.Size(220, 719);
             this.panelMenu.TabIndex = 0;
             // 
             // btnHesapAyarlari
@@ -100,7 +100,7 @@
             this.btnAyarlar.Name = "btnAyarlar";
             this.btnAyarlar.Size = new System.Drawing.Size(220, 60);
             this.btnAyarlar.TabIndex = 4;
-            this.btnAyarlar.Text = "   Soru Ayarları";
+            this.btnAyarlar.Text = "   Soru Zaman \r\n      Ayarları";
             this.btnAyarlar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAyarlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAyarlar.UseVisualStyleBackColor = true;
@@ -214,9 +214,9 @@
             this.btnCikis.FlatAppearance.BorderSize = 0;
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
-            this.btnCikis.Location = new System.Drawing.Point(914, 0);
+            this.btnCikis.Location = new System.Drawing.Point(894, 0);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(40, 39);
+            this.btnCikis.Size = new System.Drawing.Size(60, 53);
             this.btnCikis.TabIndex = 6;
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
@@ -229,7 +229,7 @@
             this.BtnFormKapa.Image = ((System.Drawing.Image)(resources.GetObject("BtnFormKapa.Image")));
             this.BtnFormKapa.Location = new System.Drawing.Point(0, 0);
             this.BtnFormKapa.Name = "BtnFormKapa";
-            this.BtnFormKapa.Size = new System.Drawing.Size(81, 100);
+            this.BtnFormKapa.Size = new System.Drawing.Size(91, 100);
             this.BtnFormKapa.TabIndex = 1;
             this.BtnFormKapa.UseVisualStyleBackColor = true;
             this.BtnFormKapa.Click += new System.EventHandler(this.BtnFormKapa_Click);
@@ -258,7 +258,7 @@
             this.panelAna.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAna.Location = new System.Drawing.Point(220, 100);
             this.panelAna.Name = "panelAna";
-            this.panelAna.Size = new System.Drawing.Size(954, 527);
+            this.panelAna.Size = new System.Drawing.Size(954, 619);
             this.panelAna.TabIndex = 2;
             // 
             // label5
@@ -268,7 +268,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Ravie", 26F);
             this.label5.ForeColor = System.Drawing.Color.Honeydew;
-            this.label5.Location = new System.Drawing.Point(437, 288);
+            this.label5.Location = new System.Drawing.Point(437, 334);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 59);
             this.label5.TabIndex = 37;
@@ -281,7 +281,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MV Boli", 26F);
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(286, 288);
+            this.label4.Location = new System.Drawing.Point(286, 334);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 58);
             this.label4.TabIndex = 36;
@@ -292,7 +292,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(352, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(352, 131);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -304,7 +304,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1174, 627);
+            this.ClientSize = new System.Drawing.Size(1174, 719);
             this.Controls.Add(this.panelAna);
             this.Controls.Add(this.panelBaslik);
             this.Controls.Add(this.panelMenu);

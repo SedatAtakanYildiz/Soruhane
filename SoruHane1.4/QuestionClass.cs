@@ -33,7 +33,7 @@ namespace SoruHane1._4
             komut.Parameters.AddWithValue("@isOk", IsOk);
             komut.Parameters.AddWithValue("@AnswerCorrect", AnswerCorrect);
             int cmd = komut.ExecuteNonQuery();
-            if (cmd != null)
+            if (cmd != 0)
             {
                 Datacon.baglanti().Close();
                 return true;

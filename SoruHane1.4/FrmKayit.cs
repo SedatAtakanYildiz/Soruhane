@@ -33,6 +33,7 @@ namespace SoruHane1._4
             rgstrc.UserTypeId = 3;
             if(rgstrc.QueryRegister()==true)
             {
+                MessageBox.Show("Kaydınız onaylanmıştır sınavlarınızda başarılar dileriz.", "Onaylandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FrmLogin Lgn = new FrmLogin();
                 Lgn.Show();
                 this.Close();
