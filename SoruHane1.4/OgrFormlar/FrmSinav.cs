@@ -13,8 +13,10 @@ namespace SoruHane1._4.OgrFormlar
 {
     public partial class FrmSinav : Form
     {
+        private Button gecerliBtn;
         private char ogrenciCevap;
-        private int soruSira=0;
+        private int soruSira = 0;
+        
         public FrmSinav()
         {
             InitializeComponent();
@@ -22,7 +24,7 @@ namespace SoruHane1._4.OgrFormlar
         List<QuestionClass> soru = new List<QuestionClass>();
         private void FrmSinav_Load(object sender, EventArgs e)
         {
-           
+
             SqlCommand komut = new SqlCommand("SELECT TOP 11 * FROM tblquestions ORDER BY NEWID()", Datacon.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
@@ -30,8 +32,8 @@ namespace SoruHane1._4.OgrFormlar
                 while (dr.Read())
                 {
                     QuestionClass s = new QuestionClass();
-                    s.QuestionId= Convert.ToInt16(dr[0]);
-                    s.QuestionText= Convert.ToString(dr[1]);
+                    s.QuestionId = Convert.ToInt16(dr[0]);
+                    s.QuestionText = Convert.ToString(dr[1]);
                     s.QuestionImgPath = Convert.ToString(dr[2]);
                     s.AnswerA = Convert.ToString(dr[3]);
                     s.AnswerB = Convert.ToString(dr[4]);
@@ -41,7 +43,7 @@ namespace SoruHane1._4.OgrFormlar
                     soru.Add(s);
 
                 }
-                
+
                 Datacon.baglanti().Close();
             }
             else
@@ -53,24 +55,28 @@ namespace SoruHane1._4.OgrFormlar
 
         private void BtnA_Click(object sender, EventArgs e)
         {
+            SeciliTus(sender);
             ogrenciCevap = 'A';
         }
 
         private void btnB_Click(object sender, EventArgs e)
         {
+            SeciliTus(sender);
             ogrenciCevap = 'B';
         }
 
         private void BtnC_Click(object sender, EventArgs e)
         {
+            SeciliTus(sender);
             ogrenciCevap = 'C';
         }
 
         private void BtnD_Click(object sender, EventArgs e)
         {
+            SeciliTus(sender);
             ogrenciCevap = 'D';
         }
-         
+
         private void BtnSinavBasla_Click_1(object sender, EventArgs e)
         {
             BtnSinavBasla.Visible = false;
@@ -85,6 +91,8 @@ namespace SoruHane1._4.OgrFormlar
 
         private void BtnSinavilerle_Click_1(object sender, EventArgs e)
         {
+            gecerliBtn = null;
+            SeciliTus(sender);
             soru[soruSira - 1].AnswerStudent = ogrenciCevap;
             SoruGetir();
 
@@ -123,12 +131,12 @@ namespace SoruHane1._4.OgrFormlar
                 Datacon.baglanti().Close();
             }
             BtnSinavBitir.Visible = false;
-            tusKontrol();
+            TusKontrol();
         }
         //metodlar
-        public void SoruGetir()
+        private void SoruGetir()
         {
-            
+
             if (soruSira < soru.Count)
             {
                 TxtSoru.Text = soruSira + 1 + "-)" + soru[soruSira].QuestionText;
@@ -136,20 +144,22 @@ namespace SoruHane1._4.OgrFormlar
                 btnB.Text = soru[soruSira].AnswerB;
                 BtnC.Text = soru[soruSira].AnswerC;
                 BtnD.Text = soru[soruSira].AnswerD;
-                if (soru[soruSira].QuestionImgPath != null) {
-                    pictureSoru.ImageLocation = soru[soruSira].QuestionImgPath; }
+                if (soru[soruSira].QuestionImgPath != null)
+                {
+                    pictureSoru.ImageLocation = soru[soruSira].QuestionImgPath;
+                }
             }
             else
             {
 
                 TxtSoru.Text = "Soruları göndermek için sınavı bitir butonuna basınız!";
-                tusKontrol();
+                TusKontrol();
 
             }
             ++soruSira;
 
         }
-        public void tusKontrol()
+        private void TusKontrol()
         {
             BtnA.Visible = false;
             btnB.Visible = false;
@@ -158,5 +168,43 @@ namespace SoruHane1._4.OgrFormlar
             pictureSoru.Visible = false;
             BtnSinavilerle.Visible = false;
         }
+        private void SeciliTus(object btnsender)
+        {
+            if(btnsender != null)
+            {
+                if(gecerliBtn != (Button)btnsender)
+                {
+                    VarsayilanaDon();
+                    gecerliBtn = (Button)btnsender;
+                    gecerliBtn.BackColor = Color.FromArgb(35, 35, 50);
+                }
+            }
+        }
+        private void VarsayilanaDon()
+        {
+            foreach (Control oncekiBtn in PnlCevap.Controls)
+            {
+                if (oncekiBtn.GetType() == typeof(Button))
+                {
+                    oncekiBtn.BackColor = Color.FromArgb(39, 39, 58);                                    
+                }
+            }
+        }
+
+        private void PnlCevap_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TxtSoru_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureSoru_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+        
+    }

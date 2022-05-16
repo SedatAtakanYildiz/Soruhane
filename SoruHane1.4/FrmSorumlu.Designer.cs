@@ -61,11 +61,12 @@
             this.panelAna.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAna.Location = new System.Drawing.Point(220, 100);
             this.panelAna.Name = "panelAna";
-            this.panelAna.Size = new System.Drawing.Size(935, 528);
+            this.panelAna.Size = new System.Drawing.Size(935, 567);
             this.panelAna.TabIndex = 5;
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Ravie", 26F);
@@ -78,6 +79,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MV Boli", 26F);
@@ -90,6 +92,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(367, 120);
@@ -159,7 +162,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 628);
+            this.panelMenu.Size = new System.Drawing.Size(220, 667);
             this.panelMenu.TabIndex = 3;
             // 
             // btnAyarlar
@@ -237,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 628);
+            this.ClientSize = new System.Drawing.Size(1155, 667);
             this.Controls.Add(this.panelAna);
             this.Controls.Add(this.panelBaslik);
             this.Controls.Add(this.panelMenu);

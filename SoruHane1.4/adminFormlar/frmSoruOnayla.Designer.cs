@@ -60,7 +60,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 644);
+            this.panel1.Size = new System.Drawing.Size(1008, 663);
             this.panel1.TabIndex = 1;
             // 
             // btnBitir
@@ -71,9 +71,9 @@
             this.btnBitir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBitir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBitir.Image = ((System.Drawing.Image)(resources.GetObject("btnBitir.Image")));
-            this.btnBitir.Location = new System.Drawing.Point(450, 578);
+            this.btnBitir.Location = new System.Drawing.Point(504, 603);
             this.btnBitir.Name = "btnBitir";
-            this.btnBitir.Size = new System.Drawing.Size(127, 54);
+            this.btnBitir.Size = new System.Drawing.Size(142, 54);
             this.btnBitir.TabIndex = 21;
             this.btnBitir.Text = "   Bitir";
             this.btnBitir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -88,7 +88,7 @@
             this.btnOnaylama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOnaylama.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnOnaylama.Image = ((System.Drawing.Image)(resources.GetObject("btnOnaylama.Image")));
-            this.btnOnaylama.Location = new System.Drawing.Point(281, 575);
+            this.btnOnaylama.Location = new System.Drawing.Point(283, 594);
             this.btnOnaylama.Name = "btnOnaylama";
             this.btnOnaylama.Size = new System.Drawing.Size(203, 66);
             this.btnOnaylama.TabIndex = 20;
@@ -105,7 +105,7 @@
             this.BtnOnay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnOnay.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnOnay.Image = ((System.Drawing.Image)(resources.GetObject("BtnOnay.Image")));
-            this.BtnOnay.Location = new System.Drawing.Point(100, 575);
+            this.BtnOnay.Location = new System.Drawing.Point(85, 597);
             this.BtnOnay.Name = "BtnOnay";
             this.BtnOnay.Size = new System.Drawing.Size(203, 66);
             this.BtnOnay.TabIndex = 19;
@@ -122,7 +122,7 @@
             this.btnSoruGor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSoruGor.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSoruGor.Image = ((System.Drawing.Image)(resources.GetObject("btnSoruGor.Image")));
-            this.btnSoruGor.Location = new System.Drawing.Point(226, 250);
+            this.btnSoruGor.Location = new System.Drawing.Point(226, 259);
             this.btnSoruGor.Name = "btnSoruGor";
             this.btnSoruGor.Size = new System.Drawing.Size(203, 66);
             this.btnSoruGor.TabIndex = 18;
@@ -141,10 +141,10 @@
             this.BtnD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnD.Image = ((System.Drawing.Image)(resources.GetObject("BtnD.Image")));
             this.BtnD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnD.Location = new System.Drawing.Point(61, 501);
+            this.BtnD.Location = new System.Drawing.Point(61, 525);
             this.BtnD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnD.Name = "BtnD";
-            this.BtnD.Size = new System.Drawing.Size(175, 66);
+            this.BtnD.Size = new System.Drawing.Size(175, 71);
             this.BtnD.TabIndex = 17;
             this.BtnD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnD.UseVisualStyleBackColor = true;
@@ -160,10 +160,10 @@
             this.BtnC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnC.Image = ((System.Drawing.Image)(resources.GetObject("BtnC.Image")));
             this.BtnC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnC.Location = new System.Drawing.Point(61, 441);
+            this.BtnC.Location = new System.Drawing.Point(61, 454);
             this.BtnC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnC.Name = "BtnC";
-            this.BtnC.Size = new System.Drawing.Size(175, 66);
+            this.BtnC.Size = new System.Drawing.Size(175, 76);
             this.BtnC.TabIndex = 16;
             this.BtnC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnC.UseVisualStyleBackColor = true;
@@ -179,7 +179,7 @@
             this.btnB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnB.Image = ((System.Drawing.Image)(resources.GetObject("btnB.Image")));
             this.btnB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnB.Location = new System.Drawing.Point(61, 382);
+            this.btnB.Location = new System.Drawing.Point(61, 392);
             this.btnB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnB.Name = "btnB";
             this.btnB.Size = new System.Drawing.Size(175, 66);
@@ -201,7 +201,7 @@
             this.BtnA.Location = new System.Drawing.Point(61, 321);
             this.BtnA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnA.Name = "BtnA";
-            this.BtnA.Size = new System.Drawing.Size(175, 66);
+            this.BtnA.Size = new System.Drawing.Size(175, 75);
             this.BtnA.TabIndex = 14;
             this.BtnA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnA.UseVisualStyleBackColor = true;
@@ -214,7 +214,7 @@
             this.TxtSoru.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtSoru.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSoru.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.TxtSoru.Location = new System.Drawing.Point(61, 98);
+            this.TxtSoru.Location = new System.Drawing.Point(61, 107);
             this.TxtSoru.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtSoru.MaxLength = 1000;
             this.TxtSoru.Name = "TxtSoru";
@@ -230,7 +230,7 @@
             // 
             this.pictureSoru.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureSoru.Image = ((System.Drawing.Image)(resources.GetObject("pictureSoru.Image")));
-            this.pictureSoru.Location = new System.Drawing.Point(612, 98);
+            this.pictureSoru.Location = new System.Drawing.Point(612, 107);
             this.pictureSoru.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureSoru.Name = "pictureSoru";
             this.pictureSoru.Size = new System.Drawing.Size(133, 123);
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 644);
+            this.ClientSize = new System.Drawing.Size(1008, 663);
             this.Controls.Add(this.panel1);
             this.Name = "frmSoruOnayla";
             this.Text = "frmSoruOnayla";

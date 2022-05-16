@@ -181,6 +181,7 @@
             this.btnAyarlar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAyarlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAyarlar.UseVisualStyleBackColor = true;
+            this.btnAyarlar.Click += new System.EventHandler(this.btnAyarlar_Click_1);
             // 
             // btnKayıt
             // 

@@ -230,3 +230,4 @@ C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\bin\Debug\ru\DevExpress.Pdf.v21.2
 C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.CopyComplete
 C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\obj\Debug\SoruHane1._4.adminFormlar.FrmAdmin_sorumuKayıt.resources
 C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\obj\Debug\SoruHane1._4.FrmSifremiUnuttum.resources
+C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\obj\Debug\SoruHane1._4.adminFormlar.frmSoruOnayla.resources

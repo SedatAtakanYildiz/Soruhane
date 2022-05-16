@@ -24,26 +24,31 @@ namespace SoruHane1._4.SorumluFormlari
 
         private void TxtA_Click(object sender, EventArgs e)
         {
-            TxtA.Text = "";
+            if (TxtA.Text == "A şıkkını giriniz")
+                TxtA.Text = "";
         }
 
         private void txtB_Click(object sender, EventArgs e)
         {
-            txtB.Text = "";
+            if (txtB.Text == "B şıkkını giriniz")
+                txtB.Text = "";
         }
 
         private void txtC_Click(object sender, EventArgs e)
         {
-            txtC.Text = "";
+            if (txtC.Text == "C şıkkını giriniz")
+                txtC.Text = "";
         }
 
         private void TxtD_Click(object sender, EventArgs e)
         {
-            TxtD.Text = "";
+            if (TxtD.Text == "D şıkkını giriniz")
+                TxtD.Text = "";
         }
 
         private void TxtSoru_Click(object sender, EventArgs e)
         {
+            if(TxtSoru.Text== "Lütfen sorunuzu bu alana giriniz.")
             TxtSoru.Text = "";
         }
 
@@ -130,5 +135,7 @@ namespace SoruHane1._4.SorumluFormlari
             cmbUnute.SelectedIndex = 0;
             Datacon.baglanti().Close();
         }
+
+       
     }
 }

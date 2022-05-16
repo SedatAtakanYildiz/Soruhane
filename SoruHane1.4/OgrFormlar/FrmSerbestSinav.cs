@@ -13,6 +13,7 @@ namespace SoruHane1._4.OgrFormlar
 {
     public partial class FrmSerbestSinav : Form
     {
+        private Button gecerliBtn;
         private char ogrenciCevap;
         private int soruSira = 0;
         public FrmSerbestSinav()
@@ -49,82 +50,7 @@ namespace SoruHane1._4.OgrFormlar
             {
                 Datacon.baglanti().Close();
             }
-        }
-
-        private void BtnSinavBasla_Click(object sender, EventArgs e)
-        {
-            BtnSinavBasla.Visible = false;
-            BtnA.Visible = true;
-            btnB.Visible = true;
-            BtnC.Visible = true;
-            BtnD.Visible = true;
-            BtnSinavilerle.Visible = true;
-            BtnSinavBitir.Visible = true;
-            SoruGetir();
-        }
-
-        private void BtnA_Click(object sender, EventArgs e)
-        {
-            ogrenciCevap = 'A';
-        }
-
-        private void btnB_Click(object sender, EventArgs e)
-        {
-            ogrenciCevap = 'B';
-        }
-
-        private void BtnC_Click(object sender, EventArgs e)
-        {
-            ogrenciCevap = 'C';
-        }
-
-        private void BtnD_Click(object sender, EventArgs e)
-        {
-            ogrenciCevap = 'D';
-        }
-
-        private void BtnSinavilerle_Click(object sender, EventArgs e)
-        {
-            soru[soruSira - 1].AnswerStudent = ogrenciCevap;
-            SoruGetir();
-
-        }
-
-        private void BtnSinavBitir_Click(object sender, EventArgs e)
-        {
-            int ExamId;
-            SqlCommand komut = new SqlCommand("INSERT INTO tblexam (userID,examDate) values(@userId, GETDATE()) SELECT SCOPE_IDENTITY()", Datacon.baglanti());
-            komut.Parameters.AddWithValue("@userId", glblclass.OnlineUserId);
-            
-            SqlDataReader dr = komut.ExecuteReader();
-            if (dr.Read())
-            {
-                ExamId = Convert.ToInt16(dr[0]);// gelen Sınav Idsini tutuyoruz
-                for (int i = 0; i < soru.Count; i++)
-                {
-                    SqlCommand komut2 = new SqlCommand("INSERT INTO tblexamdetail(examID,questionID,answer,isCorrect) VALUES(@examId, @questionId, @answer, @isCorrect)", Datacon.baglanti());
-                    komut2.Parameters.AddWithValue("@examId", ExamId);
-                    komut2.Parameters.AddWithValue("@questionId", soru[i].QuestionId);
-                    if (soru[i].AnswerCorrect == soru[i].AnswerStudent) { komut2.Parameters.AddWithValue("@answer", 1); komut2.Parameters.AddWithValue("@isCorrect", 3); }
-                    else { komut2.Parameters.AddWithValue("@answer", 0); komut2.Parameters.AddWithValue("@isCorrect", 0); }
-                    int cmd = komut2.ExecuteNonQuery();
-                    if (cmd != 0)
-                    {
-                        Datacon.baglanti().Close();
-
-                    }
-                }
-                TxtSoru.Text = "Sınavınız başarıyla gönderilmiştir";
-                Datacon.baglanti().Close();
-            }
-            else
-            {
-                TxtSoru.Text = "Sistemsel Bir Arza Çıkmıştır Sınavınız İptal Edilmiştir";
-                Datacon.baglanti().Close();
-            }
-            BtnSinavBitir.Visible=false;
-            tusKontrol();
-        }
+        }    
         //metodlar
         public void SoruGetir()
         {
@@ -158,6 +84,108 @@ namespace SoruHane1._4.OgrFormlar
             BtnD.Visible = false;
             pictureSoru.Visible = false;
             BtnSinavilerle.Visible = false;
+        }
+        private void SeciliTus(object btnsender)
+        {
+            if (btnsender != null)
+            {
+                if (gecerliBtn != (Button)btnsender)
+                {
+                    VarsayilanaDon();
+                    gecerliBtn = (Button)btnsender;
+                    gecerliBtn.BackColor = Color.FromArgb(35, 35, 50);
+                }
+            }
+        }
+        private void VarsayilanaDon()
+        {
+            foreach (Control oncekiBtn in PnlCevap.Controls)
+            {
+                if (oncekiBtn.GetType() == typeof(Button))
+                {
+                    oncekiBtn.BackColor = Color.FromArgb(39, 39, 58);
+                }
+            }
+        }
+        //butonlar
+        private void BtnSinavBasla_Click_1(object sender, EventArgs e)
+        {
+            BtnSinavBasla.Visible = false;
+            BtnA.Visible = true;
+            btnB.Visible = true;
+            BtnC.Visible = true;
+            BtnD.Visible = true;
+            BtnSinavilerle.Visible = true;
+            BtnSinavBitir.Visible = true;
+            SoruGetir();
+        }
+
+        private void BtnA_Click_1(object sender, EventArgs e)
+        {
+            SeciliTus(sender);
+            ogrenciCevap = 'A';
+        }
+
+        private void btnB_Click(object sender, EventArgs e)
+        {
+            SeciliTus(sender);
+            ogrenciCevap = 'B';
+        }
+
+        private void BtnC_Click(object sender, EventArgs e)
+        {
+            SeciliTus(sender);
+            ogrenciCevap = 'C';
+        }
+
+        private void BtnD_Click(object sender, EventArgs e)
+        {
+            SeciliTus(sender);
+            ogrenciCevap = 'D';
+        }
+
+        private void BtnSinavilerle_Click_1(object sender, EventArgs e)
+        {
+            gecerliBtn = null;
+            SeciliTus(sender);
+            soru[soruSira - 1].AnswerStudent = ogrenciCevap;
+            SoruGetir();
+        }
+
+        private void BtnSinavBitir_Click_1(object sender, EventArgs e)
+        {
+            int ExamId;
+            SqlCommand komut = new SqlCommand("INSERT INTO tblexam (userID,examDate) values(@userId, GETDATE()) SELECT SCOPE_IDENTITY()", Datacon.baglanti());
+            komut.Parameters.AddWithValue("@userId", glblclass.OnlineUserId);
+
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                ExamId = Convert.ToInt16(dr[0]);// gelen Sınav Idsini tutuyoruz
+                for (int i = 0; i < soru.Count; i++)
+                {
+                    SqlCommand komut2 = new SqlCommand("INSERT INTO tblexamdetail(examID,questionID,answer,isCorrect) VALUES(@examId, @questionId, @answer, @isCorrect)", Datacon.baglanti());
+                    komut2.Parameters.AddWithValue("@examId", ExamId);
+                    komut2.Parameters.AddWithValue("@questionId", soru[i].QuestionId);
+                    if (soru[i].AnswerCorrect == soru[i].AnswerStudent) { komut2.Parameters.AddWithValue("@answer", 1); komut2.Parameters.AddWithValue("@isCorrect", 3); }
+                    else { komut2.Parameters.AddWithValue("@answer", 0); komut2.Parameters.AddWithValue("@isCorrect", 0); }
+                    int cmd = komut2.ExecuteNonQuery();
+                    if (cmd != 0)
+                    {
+                        Datacon.baglanti().Close();
+
+                    }
+                }
+                TxtSoru.Text = "Sınavınız başarıyla gönderilmiştir";
+                Datacon.baglanti().Close();
+            }
+            else
+            {
+                TxtSoru.Text = "Sistemsel Bir Arza Çıkmıştır Sınavınız İptal Edilmiştir";
+                Datacon.baglanti().Close();
+            }
+            BtnSinavBitir.Visible = false;
+            tusKontrol();
         }
     }
 }

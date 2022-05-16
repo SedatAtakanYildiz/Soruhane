@@ -126,5 +126,11 @@ namespace SoruHane1._4
             }
             Reset();
         }
+
+        private void btnAyarlar_Click_1(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "HESAP AYARLARI";
+            YeniFormAc(new SorumluFormlari.frmAyarlar(), sender);
+        }
     }
 }
