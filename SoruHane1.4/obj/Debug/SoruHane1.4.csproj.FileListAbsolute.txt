@@ -136,7 +136,6 @@ C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\bin\Debug\es\DevExpress.Pdf.v
 C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\bin\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.CopyComplete
-C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.SuggestedBindingRedirects.cache
 C:\Users\atknm\Desktop\SoruhaneV1.4-f3e8f2d7a7a017fa7d62d01adadb819b4d5763d6\SoruHane1.4\bin\Debug\SoruHane1.4.exe.config
 C:\Users\atknm\Desktop\SoruhaneV1.4-f3e8f2d7a7a017fa7d62d01adadb819b4d5763d6\SoruHane1.4\bin\Debug\SoruHane1.4.exe
 C:\Users\atknm\Desktop\SoruhaneV1.4-f3e8f2d7a7a017fa7d62d01adadb819b4d5763d6\SoruHane1.4\bin\Debug\SoruHane1.4.pdb
@@ -231,3 +230,7 @@ C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.Copy
 C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\obj\Debug\SoruHane1._4.adminFormlar.FrmAdmin_sorumuKayıt.resources
 C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\obj\Debug\SoruHane1._4.FrmSifremiUnuttum.resources
 C:\Users\atknm\Desktop\ödev\kopya\SoruHane1.4\obj\Debug\SoruHane1._4.adminFormlar.frmSoruOnayla.resources
+C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1._4.adminFormlar.FrmAdmin_sorumuKayıt.resources
+C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1._4.adminFormlar.frmSoruOnayla.resources
+C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1._4.FrmSifremiUnuttum.resources
+C:\Users\UCY\source\repos\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.SuggestedBindingRedirects.cache

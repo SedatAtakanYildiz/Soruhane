@@ -16,7 +16,17 @@ namespace SoruHane1._4.adminFormlar
         {
             InitializeComponent();
         }
-
+        QuestionClass ques = new QuestionClass();
+        private void SoruGetir()
+        {
+            ques.QuestionPull(0);
+            TxtSoru.Text = ques.QuestionText;
+            pictureSoru.ImageLocation = ques.QuestionImgPath;
+            BtnA.Text = ques.AnswerA;
+            btnB.Text = ques.AnswerB;
+            BtnC.Text = ques.AnswerC;
+            BtnD.Text = ques.AnswerD;
+        }
         private void btnSoruGor_Click(object sender, EventArgs e)
         {
             btnSoruGor.Visible = false;
@@ -27,6 +37,13 @@ namespace SoruHane1._4.adminFormlar
             btnOnaylama.Visible = true;
             BtnOnay.Visible = true;
             btnBitir.Visible = true;
+            SoruGetir();
+        }
+
+        private void BtnOnay_Click(object sender, EventArgs e)
+        {
+           ques.QuestionOk(ques.QuestionId);
+            SoruGetir();
         }
     }
 }

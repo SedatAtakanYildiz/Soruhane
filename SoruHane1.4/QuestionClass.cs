@@ -17,7 +17,7 @@ namespace SoruHane1._4
         public string AnswerC { get; set; }
         public string AnswerD { get; set; }
         public int UnitId { get; set; }
-        public int IsOk { get; set; }   
+        public int IsOk { get; set; } = 0;   
         public char AnswerCorrect { get; set; }
         public char AnswerStudent { get; set; }
         public bool QuestionAdd()
@@ -41,5 +41,42 @@ namespace SoruHane1._4
             else { return false; }
 
         }
+        public void QuestionOk(int questionId)
+        {
+            SqlCommand komut = new SqlCommand("EXEC QuestionOk @QuestionId,@isOk", Datacon.baglanti());
+            komut.Parameters.AddWithValue("@QuestionId", QuestionId);
+            komut.Parameters.AddWithValue("@isOk", 1);
+            int cmd = komut.ExecuteNonQuery();
+            if (cmd != 0)
+            {
+                Datacon.baglanti().Close();
+            }
+            else {  }
+        }
+        public void QuestionPull(int PullIsOk)
+        {
+            SqlCommand komut = new SqlCommand("EXEC QuestionPull @IsOk", Datacon.baglanti());
+            komut.Parameters.AddWithValue("@IsOk", PullIsOk);
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                QuestionId = Convert.ToInt16(dr[0]);
+                QuestionText = Convert.ToString(dr[1]);
+                QuestionImgPath = Convert.ToString(dr[2]);
+                AnswerA = Convert.ToString(dr[3]);
+                AnswerB = Convert.ToString(dr[4]);
+                AnswerC = Convert.ToString(dr[5]);
+                AnswerD = Convert.ToString(dr[6]);
+                UnitId = Convert.ToInt16(dr[7]);
+                IsOk = Convert.ToInt16(dr[8]);
+                AnswerCorrect = Convert.ToChar(dr[9]);
+                Datacon.baglanti().Close();
+            }
+            else
+            {
+                Datacon.baglanti().Close();
+            }
+        }
+
     }
 }

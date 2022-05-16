@@ -85,7 +85,9 @@ namespace SoruHane1._4.SorumluFormlari
             TxtD.Text = "D şıkkını giriniz";
             cmbUnute.Text = "Lütfen Üniteyi Seçiniz";
             dogruCevap = ' ';
-            
+            pictureSoruResmi.Image = null;
+            IMGYolu = "";
+
         }
 
         private void btnBitir_Click(object sender, EventArgs e)
