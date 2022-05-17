@@ -19,7 +19,9 @@ namespace SoruHane1._4
             if (dr.Read())
             {
                 glblclass.OnlineUserId = Convert.ToInt16(dr[0]);
-                glblclass.OnlineUserName = Convert.ToString(dr[1]);
+                glblclass.OnlineUserNickName = Convert.ToString(dr[1]);
+                glblclass.OnlineUserName = Convert.ToString(dr[3]);
+                glblclass.OnlineUserSurname = Convert.ToString(dr[4]);
                 Datacon.baglanti().Close();
                 return true;
             }

@@ -132,5 +132,11 @@ namespace SoruHane1._4
             LblBaslik.Text = "HESAP AYARLARI";
             YeniFormAc(new SorumluFormlari.frmAyarlar(), sender);
         }
+
+        private void FrmAdmin_Load(object sender, EventArgs e)
+        {
+            lblIsim.Text = glblclass.OnlineUserName;
+            lblSoyisim.Text = glblclass.OnlineUserSurname;
+        }
     }
 }

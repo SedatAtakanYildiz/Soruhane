@@ -145,6 +145,10 @@ namespace SoruHane1._4
             Application.Exit();
         }
 
-        
+        private void FrmOgrenci_Load(object sender, EventArgs e)
+        {
+            lblIsim.Text = glblclass.OnlineUserName;
+            lblSoyisim.Text = glblclass.OnlineUserSurname;
+        }
     }
 }
