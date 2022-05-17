@@ -28,10 +28,10 @@ namespace SoruHane1._4.OgrFormlar
             
             if (sayac == 0) { 
             chartDogruYanlis.Visible = true;
-            for(int i = 0; i < Units.Length; i++)
+            for (int i = 0; i < anls.AnalysisList.Count; i++)
             {
-                chartDogruYanlis.Series["Doğru"].Points.AddXY(Units[i], dogrular[i]);
-                chartDogruYanlis.Series["Yanlış"].Points.AddXY(Units[i], yanlislar[i]);
+                chartDogruYanlis.Series["Doğru"].Points.AddXY(anls.AnalysisList[i].UnitName, anls.AnalysisList[i].Correct);
+                chartDogruYanlis.Series["Yanlış"].Points.AddXY(anls.AnalysisList[i].UnitName, anls.AnalysisList[i].Incorrect);
             }
                 sayac++;
             }
@@ -42,11 +42,18 @@ namespace SoruHane1._4.OgrFormlar
         {
 
         
-            anls.PullAnalysisCorrect();
-            anls.PullAnalysisInCorrect();
-            for(int i = 0; i < anls.AnalysisCorrect.Count; i++)
+            //anls.PullAnalysisCorrect();
+            //anls.PullAnalysisInCorrect();
+            //for(int i = 0; i < anls.AnalysisCorrect.Count; i++)
+            //{
+            //    ChartUnite.Series["Units"].Points.AddXY(anls.AnalysisCorrect[i].UnitName, anls.AnalysisCorrect[i].Correct);
+
+            //}
+
+            anls.PullAnalysis();
+            for (int i = 0; i < anls.AnalysisList.Count; i++)
             {
-                ChartUnite.Series["Units"].Points.AddXY(anls.AnalysisCorrect[i].UnitName, anls.AnalysisCorrect[i].Correct);
+                ChartUnite.Series["Units"].Points.AddXY(anls.AnalysisList[i].UnitName, anls.AnalysisList[i].Correct);
 
             }
 

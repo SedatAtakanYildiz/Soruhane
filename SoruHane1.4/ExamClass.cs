@@ -16,35 +16,27 @@ namespace SoruHane1._4
         {
             SqlCommand komut = new SqlCommand("EXEC PullForSigmaAllQuestion " + glblclass.OnlineUserId, Datacon.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
-            if (dr.Read())
+            while (dr.Read())
             {
-                while (dr.Read())
-                {
-                    if (soru.Count >=5) { break; }
-                    ExamClass s = new ExamClass();
-                    s.QuestionId = Convert.ToInt16(dr[0]);
-                    s.QuestionText = Convert.ToString(dr[1]);
-                    s.QuestionImgPath = Convert.ToString(dr[2]);
-                    s.AnswerA = Convert.ToString(dr[3]);
-                    s.AnswerB = Convert.ToString(dr[4]);
-                    s.AnswerC = Convert.ToString(dr[5]);
-                    s.AnswerD = Convert.ToString(dr[6]);
-                    s.AnswerCorrect = Convert.ToChar(dr[7]);
-                    soru.Add(s);
-                }
-
-                Datacon.baglanti().Close();
+                if (soru.Count >= 10) { break; }
+                ExamClass s = new ExamClass();
+                s.QuestionId = Convert.ToInt16(dr[0]);
+                s.QuestionText = Convert.ToString(dr[1]);
+                s.QuestionImgPath = Convert.ToString(dr[2]);
+                s.AnswerA = Convert.ToString(dr[3]);
+                s.AnswerB = Convert.ToString(dr[4]);
+                s.AnswerC = Convert.ToString(dr[5]);
+                s.AnswerD = Convert.ToString(dr[6]);
+                s.AnswerCorrect = Convert.ToChar(dr[7]);
+                soru.Add(s);
             }
-            else
-            {
                 Datacon.baglanti().Close();
-            }
+        
 
             SqlCommand SigmaSorguPull = new SqlCommand("EXEC PullForSigma @userId", Datacon.baglanti());
             SigmaSorguPull.Parameters.AddWithValue("@userId", glblclass.OnlineUserId);
             SqlDataReader drSgm = SigmaSorguPull.ExecuteReader();
-            if (drSgm.Read())
-            {
+
                 while (drSgm.Read())
                 {
                     ExamClass s = new ExamClass();
@@ -63,11 +55,6 @@ namespace SoruHane1._4
                 }
 
                 Datacon.baglanti().Close();
-            }
-            else
-            {
-                Datacon.baglanti().Close();
-            }
         }
         public void SinavBitir()
         {
