@@ -51,7 +51,6 @@ namespace SoruHane1._4
             {
                 Datacon.baglanti().Close();
             }
-            else {  }
         }
         public void QuestionNo(int questionId)
         {

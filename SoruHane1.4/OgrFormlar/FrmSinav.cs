@@ -16,7 +16,6 @@ namespace SoruHane1._4.OgrFormlar
         private Button gecerliBtn;
         private char ogrenciCevap;
         private int soruSira = 0;
-        private int sigmaSoriSira = 0;
         private int Sayac = 60;
         ExamClass exam = new ExamClass();
         public FrmSinav()

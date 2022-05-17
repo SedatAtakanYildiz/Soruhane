@@ -280,3 +280,4 @@ C:\Users\UCY\source\repos\git\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1._4.Fr
 C:\Users\UCY\source\repos\git\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1._4.SorumluFormlari.frmAyarlar.resources
 C:\Users\UCY\source\repos\git\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1._4.SorumluFormlari.frmSoruEkleme.resources
 C:\Users\UCY\source\repos\git\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.CopyComplete
+C:\Users\UCY\source\repos\git\SoruhaneV1.4\SoruHane1.4\obj\Debug\SoruHane1.4.csproj.SuggestedBindingRedirects.cache

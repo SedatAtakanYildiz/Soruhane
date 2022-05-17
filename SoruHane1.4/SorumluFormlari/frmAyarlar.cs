@@ -21,7 +21,7 @@ namespace SoruHane1._4.SorumluFormlari
         {
             UserClass usrcls=new UserClass();
             usrcls.UserInfoPullDb(glblclass.OnlineUserId);
-            if ((txtYeniSifre.Text == txtTekrarSifre.Text)&&TxtEskiSifre.Text==usrcls.UserPass)
+            if ((txtYeniSifre.Text == txtTekrarSifre.Text) && (TxtEskiSifre.Text == usrcls.UserPass))
             {
                 QueryClass querycls=new QueryClass();  
                 if(querycls.ChangePassword(txtYeniSifre.Text, glblclass.OnlineUserId) ==true)

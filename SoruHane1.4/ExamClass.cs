@@ -20,7 +20,7 @@ namespace SoruHane1._4
             {
                 while (dr.Read())
                 {
-                    if (soru.Count > 10) { break; }
+                    if (soru.Count >= 10) { break; }
                     ExamClass s = new ExamClass();
                     s.QuestionId = Convert.ToInt16(dr[0]);
                     s.QuestionText = Convert.ToString(dr[1]);
@@ -82,7 +82,7 @@ namespace SoruHane1._4
                 for (int i = 0; i < soru.Count; i++)
                 {
 
-                    if (i < 10)
+                    if (i <= 10)
                     {
                         SqlCommand komut2 = new SqlCommand("INSERT INTO tblexamdetail(examID,questionID,answer,isCorrect) VALUES(@examId, @questionId, @answer, @isCorrect)", Datacon.baglanti());
                         komut2.Parameters.AddWithValue("@examId", ExamId);
