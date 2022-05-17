@@ -21,13 +21,10 @@ namespace SoruHane1._4.SorumluFormlari
         {
             UserClass usrcls=new UserClass();
             usrcls.UserInfoPullDb(glblclass.OnlineUserId);
-            //umut sql bağlantısı gerek yine ben becerremedim şimdilik senin querylerle yapamadım
-            //ifin yanında && komutu ile txtEskiSifre ile adamın ıd sindeki sifreninde karşılaştırılıp yeni şifrenin atanması gerekiyor.
-            MessageBox.Show(usrcls.UserPass + "Id"+ glblclass.OnlineUserId+usrcls.UserId);
             if ((txtYeniSifre.Text == txtTekrarSifre.Text)&&TxtEskiSifre.Text==usrcls.UserPass)
             {
                 QueryClass querycls=new QueryClass();  
-                if(querycls.ChangePassword(txtYeniSifre.Text)==true)
+                if(querycls.ChangePassword(txtYeniSifre.Text, glblclass.OnlineUserId) ==true)
                 { 
                 MessageBox.Show("Şifreniz Başarıyla Güncellenmiştir", "İşlem Onaylandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

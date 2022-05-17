@@ -29,11 +29,32 @@ namespace SoruHane1._4
                 return false;
             }
         }
+        public bool ForgotPassword(string kullaniciadi, string mail, string yeniSifre)
+        {
+            //sql'de procedure çalıştırıp gönderilen parametre bilgilerinde kullanıcı olup olmadığı döndürür
+            SqlCommand komut = new SqlCommand("exec ForgotPassword @p1,@p2", Datacon.baglanti());
+            komut.Parameters.AddWithValue("@p1", kullaniciadi);
+            komut.Parameters.AddWithValue("@p2", mail);
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+               if( ChangePassword(yeniSifre, Convert.ToInt16(dr[0]))==true)
+                { return true; }
+                else { return false; }
+                Datacon.baglanti().Close();
+                
+            }
+            else
+            {
+                Datacon.baglanti().Close();
+                return false;
+            }
+        }
 
-        public bool ChangePassword(string YeniSifre)
+        public bool ChangePassword(string YeniSifre,int IdUser)
         {
             SqlCommand komut = new SqlCommand("UPDATE tbluser SET UserPass = @p2 WHERE UserID=@p1", Datacon.baglanti());
-            komut.Parameters.AddWithValue("@p1", glblclass.OnlineUserId);
+            komut.Parameters.AddWithValue("@p1", IdUser);
             komut.Parameters.AddWithValue("@p2", YeniSifre);
             int dr = komut.ExecuteNonQuery();
             if (dr != 0)
