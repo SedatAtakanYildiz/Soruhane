@@ -67,6 +67,7 @@
     <Compile Include="adminFormlar\frmSoruOnayla.Designer.cs">
       <DependentUpon>frmSoruOnayla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Analysis.cs" />
     <Compile Include="DatabaseCon\Datacon.cs" />
     <Compile Include="DatabaseCon\QueryClass.cs" />
     <Compile Include="ExamClass.cs" />

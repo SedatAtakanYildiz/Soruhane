@@ -20,7 +20,7 @@ namespace SoruHane1._4
             {
                 while (dr.Read())
                 {
-                    if (soru.Count >= 10) { break; }
+                    if (soru.Count >=5) { break; }
                     ExamClass s = new ExamClass();
                     s.QuestionId = Convert.ToInt16(dr[0]);
                     s.QuestionText = Convert.ToString(dr[1]);
