@@ -134,9 +134,9 @@
             this.btnCikis.FlatAppearance.BorderSize = 0;
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
-            this.btnCikis.Location = new System.Drawing.Point(877, 0);
+            this.btnCikis.Location = new System.Drawing.Point(893, 0);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(58, 56);
+            this.btnCikis.Size = new System.Drawing.Size(42, 39);
             this.btnCikis.TabIndex = 5;
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);

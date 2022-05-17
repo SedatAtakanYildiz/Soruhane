@@ -103,7 +103,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(567, 50);
-            this.panel1.TabIndex = 77;
+            this.panel1.TabIndex = 6;
             // 
             // pictureBox1
             // 
@@ -174,7 +174,7 @@
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(567, 47);
-            this.panel8.TabIndex = 77;
+            this.panel8.TabIndex = 5;
             // 
             // textSifre
             // 
@@ -222,7 +222,7 @@
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(567, 47);
-            this.panel5.TabIndex = 77;
+            this.panel5.TabIndex = 4;
             // 
             // textEposta
             // 
@@ -270,7 +270,7 @@
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(567, 47);
-            this.panel7.TabIndex = 77;
+            this.panel7.TabIndex = 3;
             // 
             // textSoyIsim
             // 
@@ -318,7 +318,7 @@
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(567, 47);
-            this.panel4.TabIndex = 77;
+            this.panel4.TabIndex = 2;
             // 
             // textIsim
             // 
@@ -366,7 +366,7 @@
             this.BtnKayıt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKayıt.Name = "BtnKayıt";
             this.BtnKayıt.Size = new System.Drawing.Size(177, 36);
-            this.BtnKayıt.TabIndex = 8;
+            this.BtnKayıt.TabIndex = 7;
             this.BtnKayıt.Text = "Kayıt Yap";
             this.BtnKayıt.UseVisualStyleBackColor = false;
             this.BtnKayıt.Click += new System.EventHandler(this.BtnKayıt_Click);
@@ -383,7 +383,7 @@
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(567, 47);
-            this.panel3.TabIndex = 77;
+            this.panel3.TabIndex = 1;
             // 
             // textKullaniciAd
             // 

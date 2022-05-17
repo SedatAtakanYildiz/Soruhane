@@ -39,6 +39,7 @@
             this.LblBaslik = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnAyarlar = new System.Windows.Forms.Button();
+            this.btnUniteEkle = new System.Windows.Forms.Button();
             this.btnSoruEkle = new System.Windows.Forms.Button();
             this.panelKullanici = new System.Windows.Forms.Panel();
             this.lblSoyisim = new System.Windows.Forms.Label();
@@ -133,9 +134,9 @@
             this.btnCikis.FlatAppearance.BorderSize = 0;
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
-            this.btnCikis.Location = new System.Drawing.Point(882, 3);
+            this.btnCikis.Location = new System.Drawing.Point(887, 3);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(50, 48);
+            this.btnCikis.Size = new System.Drawing.Size(45, 36);
             this.btnCikis.TabIndex = 5;
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
@@ -157,6 +158,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelMenu.Controls.Add(this.btnAyarlar);
+            this.panelMenu.Controls.Add(this.btnUniteEkle);
             this.panelMenu.Controls.Add(this.btnSoruEkle);
             this.panelMenu.Controls.Add(this.panelKullanici);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -174,15 +176,34 @@
             this.btnAyarlar.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAyarlar.Image = ((System.Drawing.Image)(resources.GetObject("btnAyarlar.Image")));
             this.btnAyarlar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAyarlar.Location = new System.Drawing.Point(0, 160);
+            this.btnAyarlar.Location = new System.Drawing.Point(0, 220);
             this.btnAyarlar.Name = "btnAyarlar";
             this.btnAyarlar.Size = new System.Drawing.Size(220, 60);
-            this.btnAyarlar.TabIndex = 5;
+            this.btnAyarlar.TabIndex = 8;
             this.btnAyarlar.Text = "   Hesap Ayarları";
             this.btnAyarlar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAyarlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAyarlar.UseVisualStyleBackColor = true;
-            this.btnAyarlar.Click += new System.EventHandler(this.btnAyarlar_Click);
+            this.btnAyarlar.Click += new System.EventHandler(this.btnAyarlar_Click_1);
+            // 
+            // btnUniteEkle
+            // 
+            this.btnUniteEkle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUniteEkle.FlatAppearance.BorderSize = 0;
+            this.btnUniteEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUniteEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUniteEkle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnUniteEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnUniteEkle.Image")));
+            this.btnUniteEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUniteEkle.Location = new System.Drawing.Point(0, 160);
+            this.btnUniteEkle.Name = "btnUniteEkle";
+            this.btnUniteEkle.Size = new System.Drawing.Size(220, 60);
+            this.btnUniteEkle.TabIndex = 7;
+            this.btnUniteEkle.Text = "   Ünite Ekle";
+            this.btnUniteEkle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUniteEkle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUniteEkle.UseVisualStyleBackColor = true;
+            this.btnUniteEkle.Click += new System.EventHandler(this.btnUniteEkle_Click);
             // 
             // btnSoruEkle
             // 
@@ -273,7 +294,8 @@
         private System.Windows.Forms.Label lblIsim;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Button btnSoruEkle;
-        private System.Windows.Forms.Button btnAyarlar;
         private System.Windows.Forms.Button BtnFormKapa;
+        private System.Windows.Forms.Button btnUniteEkle;
+        private System.Windows.Forms.Button btnAyarlar;
     }
 }

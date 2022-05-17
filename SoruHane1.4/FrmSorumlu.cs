@@ -103,12 +103,6 @@ namespace SoruHane1._4
             YeniFormAc(new SorumluFormlari.frmSoruEkleme(), sender);
         }
 
-        private void btnAyarlar_Click(object sender, EventArgs e)
-        {
-            LblBaslik.Text = "HESAP AYARLARI";
-            YeniFormAc(new SorumluFormlari.frmAyarlar(), sender);
-        }
-
         private void btnCikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -121,6 +115,18 @@ namespace SoruHane1._4
                 aktifForm.Close();
             }
             Reset();
+        }
+
+        private void btnAyarlar_Click_1(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "HESAP AYARLARI";
+            YeniFormAc(new SorumluFormlari.frmAyarlar(), sender);
+        }
+
+        private void btnUniteEkle_Click(object sender, EventArgs e)
+        {
+            LblBaslik.Text = "ÜNİTE EKLE";
+            YeniFormAc(new SorumluFormlari.frmAyarlar(), sender);
         }
     }
 }
