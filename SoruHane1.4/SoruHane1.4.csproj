@@ -67,6 +67,7 @@
     <Compile Include="adminFormlar\frmSoruOnayla.Designer.cs">
       <DependentUpon>frmSoruOnayla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Analysis.cs" />
     <Compile Include="DatabaseCon\Datacon.cs" />
     <Compile Include="DatabaseCon\QueryClass.cs" />
     <Compile Include="ExamClass.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestionClass.cs" />
     <Compile Include="RegisterClass.cs" />
+    <Compile Include="SigmaClass.cs" />
     <Compile Include="SorumluFormlari\frmAyarlar.cs">
       <SubType>Form</SubType>
     </Compile>

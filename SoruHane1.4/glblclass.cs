@@ -9,7 +9,9 @@ namespace SoruHane1._4
     public static class glblclass
     {
             public static int OnlineUserId;
+            public static string OnlineUserNickName;
             public static string OnlineUserName;
+            public static string OnlineUserSurname;
 
     }
 }

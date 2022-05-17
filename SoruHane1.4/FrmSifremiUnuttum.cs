@@ -21,15 +21,22 @@ namespace SoruHane1._4
         {
             if ((txtYeniSifre.Text == txtSifreTekrar.Text))
             {
-                MessageBox.Show("Şifreniz Başarıyla Değiştirilmiştir.", "Onaylandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                QueryClass querycls = new QueryClass(); 
+                if (querycls.ForgotPassword(txtKullaniciAd.Text, txtMail.Text,txtYeniSifre.Text) == true) {
+                    MessageBox.Show("Şifreniz Başarıyla Değiştirilmiştir.", "Onaylandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                }
+                else
+                {
+                    MessageBox.Show("Girdiğiniz Bilgiler Uyuşmamaktadır.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 FrmLogin Lgn = new FrmLogin();
                 Lgn.Show();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Girdiğiniz Bilgiler Uyuşmamaktadır.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Yeni Şifreler Uyuşmamaktadır.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

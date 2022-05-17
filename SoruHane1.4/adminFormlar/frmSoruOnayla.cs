@@ -45,5 +45,11 @@ namespace SoruHane1._4.adminFormlar
            ques.QuestionOk(ques.QuestionId);
             SoruGetir();
         }
+
+        private void btnOnaylama_Click(object sender, EventArgs e)
+        {
+            ques.QuestionNo(ques.QuestionId);
+            SoruGetir();
+        }
     }
 }

@@ -44,14 +44,24 @@ namespace SoruHane1._4
         public void QuestionOk(int questionId)
         {
             SqlCommand komut = new SqlCommand("EXEC QuestionOk @QuestionId,@isOk", Datacon.baglanti());
-            komut.Parameters.AddWithValue("@QuestionId", QuestionId);
+            komut.Parameters.AddWithValue("@QuestionId", questionId);
             komut.Parameters.AddWithValue("@isOk", 1);
             int cmd = komut.ExecuteNonQuery();
             if (cmd != 0)
             {
                 Datacon.baglanti().Close();
             }
-            else {  }
+        }
+        public void QuestionNo(int questionId)
+        {
+            SqlCommand komut = new SqlCommand("DELETE FROM tblquestions WHERE questionID=@QuestionId", Datacon.baglanti());
+            komut.Parameters.AddWithValue("@QuestionId", questionId);
+            int cmd = komut.ExecuteNonQuery();
+            if (cmd != 0)
+            {
+                Datacon.baglanti().Close();
+            }
+            else { }
         }
         public void QuestionPull(int PullIsOk)
         {
