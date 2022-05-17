@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSoruEkleme));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtUniteEkle = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnFotoEkle = new DevExpress.XtraEditors.SimpleButton();
             this.btnTemizle = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,6 +57,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panel1.Controls.Add(this.txtUniteEkle);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnFotoEkle);
             this.panel1.Controls.Add(this.btnTemizle);
             this.panel1.Controls.Add(this.label3);
@@ -78,6 +82,34 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(928, 603);
             this.panel1.TabIndex = 2;
+            // 
+            // txtUniteEkle
+            // 
+            this.txtUniteEkle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUniteEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(47)))));
+            this.txtUniteEkle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUniteEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtUniteEkle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtUniteEkle.Location = new System.Drawing.Point(553, 353);
+            this.txtUniteEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUniteEkle.Multiline = true;
+            this.txtUniteEkle.Name = "txtUniteEkle";
+            this.txtUniteEkle.Size = new System.Drawing.Size(216, 34);
+            this.txtUniteEkle.TabIndex = 18;
+            this.txtUniteEkle.Text = "Ünite Ekle (+)";
+            this.txtUniteEkle.Click += new System.EventHandler(this.txtUniteEkle_Click);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 8F);
+            this.label4.ForeColor = System.Drawing.Color.Bisque;
+            this.label4.Location = new System.Drawing.Point(535, 331);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(381, 20);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Ünite Eklemek İstiyorsanız Aşşağıdaki Texti Doldurunuz";
             // 
             // btnFotoEkle
             // 
@@ -376,5 +408,7 @@
         private System.Windows.Forms.ComboBox cmbUnute;
         private DevExpress.XtraEditors.SimpleButton btnFotoEkle;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox txtUniteEkle;
+        private System.Windows.Forms.Label label4;
     }
 }

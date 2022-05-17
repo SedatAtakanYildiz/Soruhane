@@ -16,6 +16,7 @@ namespace SoruHane1._4.OgrFormlar
         private Button gecerliBtn;
         private char ogrenciCevap;
         private int soruSira = 0;
+        private int Sayac = 60;
         public FrmSerbestSinav()
         {
             InitializeComponent();
@@ -67,6 +68,7 @@ namespace SoruHane1._4.OgrFormlar
                     pictureSoru.ImageLocation = soru[soruSira].QuestionImgPath;
                 }
                 ++soruSira;
+                
             }
             else
             {
@@ -74,7 +76,7 @@ namespace SoruHane1._4.OgrFormlar
                 TxtSoru.Text = "Soruları göndermek için sınavı bitir butonuna basınız!";
                 tusKontrol();
             }
-            
+            ZamanKnt();
 
         }
         public void tusKontrol (){
@@ -84,6 +86,8 @@ namespace SoruHane1._4.OgrFormlar
             BtnD.Visible = false;
             pictureSoru.Visible = false;
             BtnSinavilerle.Visible = false;
+            pictureZaman.Visible = false;
+            lblZaman.Visible = false;
         }
         private void SeciliTus(object btnsender)
         {
@@ -107,6 +111,11 @@ namespace SoruHane1._4.OgrFormlar
                 }
             }
         }
+        private void ZamanKnt()
+        {
+            Sayac = 60;
+            TmrSoruSuresi.Start();
+        }
         //butonlar
         private void BtnSinavBasla_Click_1(object sender, EventArgs e)
         {
@@ -117,6 +126,8 @@ namespace SoruHane1._4.OgrFormlar
             BtnD.Visible = true;
             BtnSinavilerle.Visible = true;
             BtnSinavBitir.Visible = true;
+            lblZaman.Visible = true;
+            pictureZaman.Visible = true;
             SoruGetir();
         }
 
@@ -149,11 +160,13 @@ namespace SoruHane1._4.OgrFormlar
             gecerliBtn = null;
             SeciliTus(sender);
             soru[soruSira - 1].AnswerStudent = ogrenciCevap;
+            ogrenciCevap =' ';
             SoruGetir();
         }
 
         private void BtnSinavBitir_Click_1(object sender, EventArgs e)
         {
+            TmrSoruSuresi.Stop();
             int ExamId;
             SqlCommand komut = new SqlCommand("INSERT INTO tblexam (userID,examDate) values(@userId, GETDATE()) SELECT SCOPE_IDENTITY()", Datacon.baglanti());
             komut.Parameters.AddWithValue("@userId", glblclass.OnlineUserId);
@@ -186,6 +199,17 @@ namespace SoruHane1._4.OgrFormlar
             }
             BtnSinavBitir.Visible = false;
             tusKontrol();
+        }
+        
+        private void TmrSoruSuresi_Tick(object sender, EventArgs e)
+        {
+            lblZaman.Text = Sayac.ToString();
+            Sayac--;
+            if (Sayac == 0)
+            {
+                TmrSoruSuresi.Stop();
+                BtnSinavilerle_Click_1(BtnSinavilerle, new EventArgs());
+            }
         }
     }
 }

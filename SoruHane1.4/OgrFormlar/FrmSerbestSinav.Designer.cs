@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSerbestSinav));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureZaman = new System.Windows.Forms.PictureBox();
+            this.lblZaman = new System.Windows.Forms.Label();
             this.PnlCevap = new System.Windows.Forms.Panel();
             this.BtnA = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
@@ -43,6 +45,7 @@
             this.pictureSoru = new System.Windows.Forms.PictureBox();
             this.TmrSoruSuresi = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureZaman)).BeginInit();
             this.PnlCevap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSoru)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +53,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panel1.Controls.Add(this.pictureZaman);
+            this.panel1.Controls.Add(this.lblZaman);
             this.panel1.Controls.Add(this.PnlCevap);
             this.panel1.Controls.Add(this.BtnSinavBitir);
             this.panel1.Controls.Add(this.BtnSinavilerle);
@@ -61,6 +66,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1041, 627);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureZaman
+            // 
+            this.pictureZaman.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureZaman.Image = ((System.Drawing.Image)(resources.GetObject("pictureZaman.Image")));
+            this.pictureZaman.Location = new System.Drawing.Point(607, 190);
+            this.pictureZaman.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureZaman.Name = "pictureZaman";
+            this.pictureZaman.Size = new System.Drawing.Size(48, 48);
+            this.pictureZaman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureZaman.TabIndex = 20;
+            this.pictureZaman.TabStop = false;
+            this.pictureZaman.Visible = false;
+            // 
+            // lblZaman
+            // 
+            this.lblZaman.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblZaman.AutoSize = true;
+            this.lblZaman.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZaman.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(140)))), ((int)(((byte)(235)))));
+            this.lblZaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblZaman.Location = new System.Drawing.Point(652, 196);
+            this.lblZaman.Name = "lblZaman";
+            this.lblZaman.Size = new System.Drawing.Size(46, 39);
+            this.lblZaman.TabIndex = 19;
+            this.lblZaman.Text = "60";
+            this.lblZaman.Visible = false;
             // 
             // PnlCevap
             // 
@@ -242,6 +274,7 @@
             // TmrSoruSuresi
             // 
             this.TmrSoruSuresi.Interval = 1000;
+            this.TmrSoruSuresi.Tick += new System.EventHandler(this.TmrSoruSuresi_Tick);
             // 
             // FrmSerbestSinav
             // 
@@ -254,6 +287,7 @@
             this.Load += new System.EventHandler(this.FrmSerbestSinav_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureZaman)).EndInit();
             this.PnlCevap.ResumeLayout(false);
             this.PnlCevap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSoru)).EndInit();
@@ -275,5 +309,7 @@
         private System.Windows.Forms.Button BtnSinavBasla;
         private System.Windows.Forms.RichTextBox TxtSoru;
         private System.Windows.Forms.PictureBox pictureSoru;
+        private System.Windows.Forms.Label lblZaman;
+        private System.Windows.Forms.PictureBox pictureZaman;
     }
 }

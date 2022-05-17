@@ -73,7 +73,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.label12);
@@ -86,24 +86,23 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(696, 476);
+            this.panel2.Size = new System.Drawing.Size(928, 586);
             this.panel2.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.RdSorumlu);
             this.panel1.Controls.Add(this.RdAdmin);
-            this.panel1.Location = new System.Drawing.Point(116, 322);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(155, 396);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(425, 41);
+            this.panel1.Size = new System.Drawing.Size(567, 50);
             this.panel1.TabIndex = 77;
             // 
             // pictureBox1
@@ -111,10 +110,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(386, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(515, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 41);
+            this.pictureBox1.Size = new System.Drawing.Size(52, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
@@ -125,11 +124,11 @@
             this.RdSorumlu.AutoSize = true;
             this.RdSorumlu.BackColor = System.Drawing.Color.Transparent;
             this.RdSorumlu.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RdSorumlu.ForeColor = System.Drawing.Color.DimGray;
-            this.RdSorumlu.Location = new System.Drawing.Point(218, 11);
-            this.RdSorumlu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RdSorumlu.ForeColor = System.Drawing.Color.MintCream;
+            this.RdSorumlu.Location = new System.Drawing.Point(291, 14);
+            this.RdSorumlu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RdSorumlu.Name = "RdSorumlu";
-            this.RdSorumlu.Size = new System.Drawing.Size(136, 23);
+            this.RdSorumlu.Size = new System.Drawing.Size(159, 25);
             this.RdSorumlu.TabIndex = 7;
             this.RdSorumlu.TabStop = true;
             this.RdSorumlu.Text = "Sınav Sorumlusu";
@@ -140,11 +139,11 @@
             this.RdAdmin.AutoSize = true;
             this.RdAdmin.BackColor = System.Drawing.Color.Transparent;
             this.RdAdmin.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RdAdmin.ForeColor = System.Drawing.Color.DimGray;
-            this.RdAdmin.Location = new System.Drawing.Point(62, 11);
-            this.RdAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RdAdmin.ForeColor = System.Drawing.Color.MintCream;
+            this.RdAdmin.Location = new System.Drawing.Point(83, 14);
+            this.RdAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RdAdmin.Name = "RdAdmin";
-            this.RdAdmin.Size = new System.Drawing.Size(71, 23);
+            this.RdAdmin.Size = new System.Drawing.Size(84, 25);
             this.RdAdmin.TabIndex = 6;
             this.RdAdmin.TabStop = true;
             this.RdAdmin.Text = "Admin";
@@ -156,11 +155,10 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.ForeColor = System.Drawing.Color.Navy;
-            this.label12.Location = new System.Drawing.Point(172, 59);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.ForeColor = System.Drawing.Color.MintCream;
+            this.label12.Location = new System.Drawing.Point(229, 73);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(346, 30);
+            this.label12.Size = new System.Drawing.Size(423, 37);
             this.label12.TabIndex = 88;
             this.label12.Text = "Admin/Personel Kayıt Formu";
             // 
@@ -168,35 +166,34 @@
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel8.Controls.Add(this.textSifre);
             this.panel8.Controls.Add(this.pictureBox6);
             this.panel8.Controls.Add(this.label11);
-            this.panel8.Location = new System.Drawing.Point(116, 280);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Location = new System.Drawing.Point(155, 345);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(425, 38);
+            this.panel8.Size = new System.Drawing.Size(567, 47);
             this.panel8.TabIndex = 77;
             // 
             // textSifre
             // 
             this.textSifre.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.textSifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textSifre.Location = new System.Drawing.Point(106, 7);
-            this.textSifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textSifre.Location = new System.Drawing.Point(141, 9);
+            this.textSifre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textSifre.Name = "textSifre";
-            this.textSifre.Size = new System.Drawing.Size(261, 30);
+            this.textSifre.Size = new System.Drawing.Size(347, 36);
             this.textSifre.TabIndex = 5;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(382, 8);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Location = new System.Drawing.Point(509, 10);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox6.Size = new System.Drawing.Size(32, 31);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 30;
             this.pictureBox6.TabStop = false;
@@ -206,11 +203,10 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label11.ForeColor = System.Drawing.Color.Navy;
-            this.label11.Location = new System.Drawing.Point(62, 15);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.ForeColor = System.Drawing.Color.MintCream;
+            this.label11.Location = new System.Drawing.Point(83, 18);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 21);
+            this.label11.Size = new System.Drawing.Size(53, 23);
             this.label11.TabIndex = 30;
             this.label11.Text = "Şifre:";
             // 
@@ -218,35 +214,34 @@
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel5.Controls.Add(this.textEposta);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(116, 237);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Location = new System.Drawing.Point(155, 292);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(425, 38);
+            this.panel5.Size = new System.Drawing.Size(567, 47);
             this.panel5.TabIndex = 77;
             // 
             // textEposta
             // 
             this.textEposta.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.textEposta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textEposta.Location = new System.Drawing.Point(106, 7);
-            this.textEposta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textEposta.Location = new System.Drawing.Point(141, 9);
+            this.textEposta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEposta.Name = "textEposta";
-            this.textEposta.Size = new System.Drawing.Size(261, 30);
+            this.textEposta.Size = new System.Drawing.Size(347, 36);
             this.textEposta.TabIndex = 4;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(380, 7);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(507, 9);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox4.Size = new System.Drawing.Size(32, 31);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 30;
             this.pictureBox4.TabStop = false;
@@ -256,11 +251,10 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label9.ForeColor = System.Drawing.Color.Navy;
-            this.label9.Location = new System.Drawing.Point(32, 11);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.ForeColor = System.Drawing.Color.MintCream;
+            this.label9.Location = new System.Drawing.Point(43, 14);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 21);
+            this.label9.Size = new System.Drawing.Size(87, 23);
             this.label9.TabIndex = 30;
             this.label9.Text = "E-Posta:";
             // 
@@ -268,35 +262,34 @@
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Controls.Add(this.textSoyIsim);
             this.panel7.Controls.Add(this.pictureBox5);
             this.panel7.Controls.Add(this.label10);
-            this.panel7.Location = new System.Drawing.Point(116, 197);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Location = new System.Drawing.Point(155, 242);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(425, 38);
+            this.panel7.Size = new System.Drawing.Size(567, 47);
             this.panel7.TabIndex = 77;
             // 
             // textSoyIsim
             // 
             this.textSoyIsim.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.textSoyIsim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textSoyIsim.Location = new System.Drawing.Point(106, 7);
-            this.textSoyIsim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textSoyIsim.Location = new System.Drawing.Point(141, 9);
+            this.textSoyIsim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textSoyIsim.Name = "textSoyIsim";
-            this.textSoyIsim.Size = new System.Drawing.Size(261, 30);
+            this.textSoyIsim.Size = new System.Drawing.Size(347, 36);
             this.textSoyIsim.TabIndex = 3;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(380, 7);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(507, 9);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox5.Size = new System.Drawing.Size(32, 31);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 30;
             this.pictureBox5.TabStop = false;
@@ -306,11 +299,10 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label10.ForeColor = System.Drawing.Color.Navy;
-            this.label10.Location = new System.Drawing.Point(34, 14);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.ForeColor = System.Drawing.Color.MintCream;
+            this.label10.Location = new System.Drawing.Point(45, 17);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 21);
+            this.label10.Size = new System.Drawing.Size(90, 23);
             this.label10.TabIndex = 30;
             this.label10.Text = "Soy İsim:";
             // 
@@ -318,35 +310,34 @@
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.textIsim);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(116, 154);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(155, 190);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(425, 38);
+            this.panel4.Size = new System.Drawing.Size(567, 47);
             this.panel4.TabIndex = 77;
             // 
             // textIsim
             // 
             this.textIsim.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.textIsim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textIsim.Location = new System.Drawing.Point(106, 6);
-            this.textIsim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textIsim.Location = new System.Drawing.Point(141, 7);
+            this.textIsim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textIsim.Name = "textIsim";
-            this.textIsim.Size = new System.Drawing.Size(261, 30);
+            this.textIsim.Size = new System.Drawing.Size(347, 36);
             this.textIsim.TabIndex = 2;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(380, 6);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(507, 7);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(32, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
@@ -356,11 +347,10 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label8.ForeColor = System.Drawing.Color.Navy;
-            this.label8.Location = new System.Drawing.Point(64, 12);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.ForeColor = System.Drawing.Color.MintCream;
+            this.label8.Location = new System.Drawing.Point(85, 15);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 21);
+            this.label8.Size = new System.Drawing.Size(50, 23);
             this.label8.TabIndex = 30;
             this.label8.Text = "İsim:";
             // 
@@ -372,10 +362,10 @@
             this.BtnKayıt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnKayıt.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKayıt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnKayıt.Location = new System.Drawing.Point(409, 366);
-            this.BtnKayıt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnKayıt.Location = new System.Drawing.Point(545, 450);
+            this.BtnKayıt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnKayıt.Name = "BtnKayıt";
-            this.BtnKayıt.Size = new System.Drawing.Size(133, 29);
+            this.BtnKayıt.Size = new System.Drawing.Size(177, 36);
             this.BtnKayıt.TabIndex = 8;
             this.BtnKayıt.Text = "Kayıt Yap";
             this.BtnKayıt.UseVisualStyleBackColor = false;
@@ -385,35 +375,34 @@
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.textKullaniciAd);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(116, 110);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(155, 135);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(425, 38);
+            this.panel3.Size = new System.Drawing.Size(567, 47);
             this.panel3.TabIndex = 77;
             // 
             // textKullaniciAd
             // 
             this.textKullaniciAd.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.textKullaniciAd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textKullaniciAd.Location = new System.Drawing.Point(106, 6);
-            this.textKullaniciAd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textKullaniciAd.Location = new System.Drawing.Point(141, 7);
+            this.textKullaniciAd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textKullaniciAd.Name = "textKullaniciAd";
-            this.textKullaniciAd.Size = new System.Drawing.Size(261, 30);
+            this.textKullaniciAd.Size = new System.Drawing.Size(347, 36);
             this.textKullaniciAd.TabIndex = 1;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(380, 6);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(507, 7);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox2.Size = new System.Drawing.Size(32, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
@@ -423,21 +412,20 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(3, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.ForeColor = System.Drawing.Color.MintCream;
+            this.label1.Location = new System.Drawing.Point(4, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 21);
+            this.label1.Size = new System.Drawing.Size(138, 23);
             this.label1.TabIndex = 30;
             this.label1.Text = "Kullanıcı Adı:";
             // 
             // FrmAdmin_sorumuKayıt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 476);
+            this.ClientSize = new System.Drawing.Size(928, 586);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmAdmin_sorumuKayıt";
             this.Text = "FrmAdmin_sorumuKayıt";
             this.panel2.ResumeLayout(false);

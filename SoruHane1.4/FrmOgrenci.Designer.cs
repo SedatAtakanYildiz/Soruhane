@@ -65,7 +65,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 719);
+            this.panelMenu.Size = new System.Drawing.Size(220, 737);
             this.panelMenu.TabIndex = 0;
             // 
             // btnHesapAyarlari
@@ -205,7 +205,7 @@
             this.panelBaslik.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBaslik.Location = new System.Drawing.Point(220, 0);
             this.panelBaslik.Name = "panelBaslik";
-            this.panelBaslik.Size = new System.Drawing.Size(954, 100);
+            this.panelBaslik.Size = new System.Drawing.Size(1073, 100);
             this.panelBaslik.TabIndex = 1;
             // 
             // btnCikis
@@ -214,7 +214,7 @@
             this.btnCikis.FlatAppearance.BorderSize = 0;
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
-            this.btnCikis.Location = new System.Drawing.Point(894, 0);
+            this.btnCikis.Location = new System.Drawing.Point(1013, 0);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(60, 53);
             this.btnCikis.TabIndex = 6;
@@ -241,7 +241,7 @@
             this.LblBaslik.BackColor = System.Drawing.Color.Transparent;
             this.LblBaslik.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblBaslik.ForeColor = System.Drawing.Color.White;
-            this.LblBaslik.Location = new System.Drawing.Point(363, 35);
+            this.LblBaslik.Location = new System.Drawing.Point(422, 35);
             this.LblBaslik.Name = "LblBaslik";
             this.LblBaslik.Size = new System.Drawing.Size(184, 37);
             this.LblBaslik.TabIndex = 0;
@@ -258,7 +258,7 @@
             this.panelAna.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAna.Location = new System.Drawing.Point(220, 100);
             this.panelAna.Name = "panelAna";
-            this.panelAna.Size = new System.Drawing.Size(954, 619);
+            this.panelAna.Size = new System.Drawing.Size(1073, 637);
             this.panelAna.TabIndex = 2;
             // 
             // label5
@@ -268,7 +268,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Ravie", 26F);
             this.label5.ForeColor = System.Drawing.Color.Honeydew;
-            this.label5.Location = new System.Drawing.Point(437, 334);
+            this.label5.Location = new System.Drawing.Point(496, 343);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 59);
             this.label5.TabIndex = 37;
@@ -281,7 +281,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MV Boli", 26F);
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(286, 334);
+            this.label4.Location = new System.Drawing.Point(345, 343);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 58);
             this.label4.TabIndex = 36;
@@ -292,7 +292,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(352, 131);
+            this.pictureBox1.Location = new System.Drawing.Point(411, 140);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -304,7 +304,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1174, 719);
+            this.ClientSize = new System.Drawing.Size(1293, 737);
             this.Controls.Add(this.panelAna);
             this.Controls.Add(this.panelBaslik);
             this.Controls.Add(this.panelMenu);

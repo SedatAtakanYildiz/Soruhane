@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSinav));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureZaman = new System.Windows.Forms.PictureBox();
+            this.lblZaman = new System.Windows.Forms.Label();
             this.PnlCevap = new System.Windows.Forms.Panel();
             this.BtnA = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
@@ -40,7 +43,9 @@
             this.BtnSinavBasla = new System.Windows.Forms.Button();
             this.TxtSoru = new System.Windows.Forms.RichTextBox();
             this.pictureSoru = new System.Windows.Forms.PictureBox();
+            this.TmrSoruSuresi = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureZaman)).BeginInit();
             this.PnlCevap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSoru)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +53,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panel1.Controls.Add(this.pictureZaman);
+            this.panel1.Controls.Add(this.lblZaman);
             this.panel1.Controls.Add(this.PnlCevap);
             this.panel1.Controls.Add(this.BtnSinavBitir);
             this.panel1.Controls.Add(this.BtnSinavilerle);
@@ -61,6 +68,33 @@
             this.panel1.Size = new System.Drawing.Size(1023, 621);
             this.panel1.TabIndex = 1;
             // 
+            // pictureZaman
+            // 
+            this.pictureZaman.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureZaman.Image = ((System.Drawing.Image)(resources.GetObject("pictureZaman.Image")));
+            this.pictureZaman.Location = new System.Drawing.Point(607, 209);
+            this.pictureZaman.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureZaman.Name = "pictureZaman";
+            this.pictureZaman.Size = new System.Drawing.Size(48, 48);
+            this.pictureZaman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureZaman.TabIndex = 22;
+            this.pictureZaman.TabStop = false;
+            this.pictureZaman.Visible = false;
+            // 
+            // lblZaman
+            // 
+            this.lblZaman.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblZaman.AutoSize = true;
+            this.lblZaman.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZaman.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(140)))), ((int)(((byte)(235)))));
+            this.lblZaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblZaman.Location = new System.Drawing.Point(652, 215);
+            this.lblZaman.Name = "lblZaman";
+            this.lblZaman.Size = new System.Drawing.Size(46, 39);
+            this.lblZaman.TabIndex = 21;
+            this.lblZaman.Text = "60";
+            this.lblZaman.Visible = false;
+            // 
             // PnlCevap
             // 
             this.PnlCevap.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -73,7 +107,6 @@
             this.PnlCevap.Name = "PnlCevap";
             this.PnlCevap.Size = new System.Drawing.Size(1023, 281);
             this.PnlCevap.TabIndex = 12;
-            this.PnlCevap.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlCevap_Paint);
             // 
             // BtnA
             // 
@@ -226,7 +259,6 @@
             this.TxtSoru.TabIndex = 1;
             this.TxtSoru.Text = " Lütfen dikkat edin\n   Sorularda geri dönüş yoktur!\n   Her Soruda 1 dakika süreni" +
     "z vardır.\n   1 dkk sonra soru otomatik atlayacaktır!!\n   Başarılar Dileriz...";
-            this.TxtSoru.TextChanged += new System.EventHandler(this.TxtSoru_TextChanged);
             // 
             // pictureSoru
             // 
@@ -239,7 +271,11 @@
             this.pictureSoru.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureSoru.TabIndex = 0;
             this.pictureSoru.TabStop = false;
-            this.pictureSoru.Click += new System.EventHandler(this.pictureSoru_Click);
+            // 
+            // TmrSoruSuresi
+            // 
+            this.TmrSoruSuresi.Interval = 1000;
+            this.TmrSoruSuresi.Tick += new System.EventHandler(this.TmrSoruSuresi_Tick);
             // 
             // FrmSinav
             // 
@@ -253,6 +289,7 @@
             this.Load += new System.EventHandler(this.FrmSinav_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureZaman)).EndInit();
             this.PnlCevap.ResumeLayout(false);
             this.PnlCevap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSoru)).EndInit();
@@ -273,5 +310,8 @@
         private System.Windows.Forms.Button BtnSinavilerle;
         private System.Windows.Forms.Button BtnSinavBasla;
         private System.Windows.Forms.Panel PnlCevap;
+        private System.Windows.Forms.PictureBox pictureZaman;
+        private System.Windows.Forms.Label lblZaman;
+        private System.Windows.Forms.Timer TmrSoruSuresi;
     }
 }
