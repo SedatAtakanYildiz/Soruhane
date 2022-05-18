@@ -25,8 +25,8 @@ namespace SoruHane1._4.OgrFormlar
         private void FrmSinav_Load(object sender, EventArgs e)
         {
 
-        exam.SoruCek();
-
+      
+        exam.SigmaSoruCek();// Sigma prensiplerine uygunsa soruyu getirir
         }
 
         private void BtnA_Click(object sender, EventArgs e)

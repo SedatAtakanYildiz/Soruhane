@@ -8,12 +8,32 @@ namespace SoruHane1._4
 {
     public class ExamClass : QuestionClass
     {
-        public int ExamDetailId { get; set; }   // exam class
-        public int isCorrect { get; set; }  //exam class
+        public int ExamDetailId { get; set; } 
+        public int isCorrect { get; set; }  
 
         public List<ExamClass> soru = new List<ExamClass>();
         public void SoruCek()
-        {
+        {   //rastgele 10 adet soru çeker
+            SqlCommand komut = new SqlCommand("SELECT TOP 10 * FROM tblquestions ORDER BY NEWID()", Datacon.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+                while (dr.Read())
+                {
+                    ExamClass s = new ExamClass();
+                    s.QuestionId = Convert.ToInt16(dr[0]);
+                    s.QuestionText = Convert.ToString(dr[1]);
+                    s.QuestionImgPath = Convert.ToString(dr[2]);
+                    s.AnswerA = Convert.ToString(dr[3]);
+                    s.AnswerB = Convert.ToString(dr[4]);
+                    s.AnswerC = Convert.ToString(dr[5]);
+                    s.AnswerD = Convert.ToString(dr[6]);
+                    s.AnswerCorrect = Convert.ToChar(dr[9]);
+                    soru.Add(s);
+
+                }
+                Datacon.baglanti().Close();
+        }
+        public void SigmaSoruCek()
+        {   //Sigma prensiplerine uygun olmayan tüm sorulardan rastgele 10 tane çeker
             SqlCommand komut = new SqlCommand("EXEC PullForSigmaAllQuestion " + glblclass.OnlineUserId, Datacon.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
@@ -30,13 +50,12 @@ namespace SoruHane1._4
                 s.AnswerCorrect = Convert.ToChar(dr[7]);
                 soru.Add(s);
             }
-                Datacon.baglanti().Close();
-        
+            Datacon.baglanti().Close();
 
+            //Sigma prensiplerine uygun tüm soruları çeker
             SqlCommand SigmaSorguPull = new SqlCommand("EXEC PullForSigma @userId", Datacon.baglanti());
             SigmaSorguPull.Parameters.AddWithValue("@userId", glblclass.OnlineUserId);
             SqlDataReader drSgm = SigmaSorguPull.ExecuteReader();
-
                 while (drSgm.Read())
                 {
                     ExamClass s = new ExamClass();
@@ -51,10 +70,9 @@ namespace SoruHane1._4
                     s.isCorrect = Convert.ToInt16(drSgm[8]);
                     s.ExamDetailId = Convert.ToInt16(drSgm[9]);
                     soru.Add(s);
-
                 }
 
-                Datacon.baglanti().Close();
+            Datacon.baglanti().Close();
         }
         public void SinavBitir()
         {

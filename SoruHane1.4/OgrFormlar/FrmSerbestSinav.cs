@@ -15,67 +15,44 @@ namespace SoruHane1._4.OgrFormlar
     {
         private Button gecerliBtn;
         private char ogrenciCevap;
+        private int dogrusayisi=0;
         private int soruSira = 0;
         private int Sayac = 60;
         public FrmSerbestSinav()
         {
             InitializeComponent();
         }
-        List<QuestionClass> soru = new List<QuestionClass>();
+        ExamClass exam = new ExamClass();
 
-        
+
         private void FrmSerbestSinav_Load(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("SELECT TOP 11 * FROM tblquestions ORDER BY NEWID()", Datacon.baglanti());
-            SqlDataReader dr = komut.ExecuteReader();
-            if (dr.Read())
-            {
-                while (dr.Read())
-                {
-                    QuestionClass s = new QuestionClass();
-                    s.QuestionId = Convert.ToInt16(dr[0]);
-                    s.QuestionText = Convert.ToString(dr[1]);
-                    s.QuestionImgPath = Convert.ToString(dr[2]);
-                    s.AnswerA = Convert.ToString(dr[3]);
-                    s.AnswerB = Convert.ToString(dr[4]);
-                    s.AnswerC = Convert.ToString(dr[5]);
-                    s.AnswerD = Convert.ToString(dr[6]);
-                    s.AnswerCorrect = Convert.ToChar(dr[9]);
-                    soru.Add(s);
-
-                }
-
-                Datacon.baglanti().Close();
-            }
-            else
-            {
-                Datacon.baglanti().Close();
-            }
+            exam.SoruCek();// rasgele 10 adet soru çeken fonksiyonu çalıştırır
         }    
         //metodlar
         public void SoruGetir()
         {
 
-            if (soruSira < soru.Count)
+            if (soruSira < exam.soru.Count)
             {
-                TxtSoru.Text = soruSira + 1 + "-)" + soru[soruSira].QuestionText;
-                BtnA.Text = soru[soruSira].AnswerA;
-                btnB.Text = soru[soruSira].AnswerB;
-                BtnC.Text = soru[soruSira].AnswerC;
-                BtnD.Text = soru[soruSira].AnswerD;
-                if (soru[soruSira].QuestionImgPath != null)
+                TxtSoru.Text = soruSira + 1 + "-)" + exam.soru[soruSira].QuestionText;
+                BtnA.Text = exam.soru[soruSira].AnswerA;
+                btnB.Text = exam.soru[soruSira].AnswerB;
+                BtnC.Text = exam.soru[soruSira].AnswerC;
+                BtnD.Text = exam.soru[soruSira].AnswerD;
+                if (exam.soru[soruSira].QuestionImgPath != null)
                 {
-                    pictureSoru.ImageLocation = soru[soruSira].QuestionImgPath;
+                    pictureSoru.ImageLocation = exam.soru[soruSira].QuestionImgPath;
                 }
-                ++soruSira;
-                
             }
             else
             {
 
                 TxtSoru.Text = "Soruları göndermek için sınavı bitir butonuna basınız!";
                 tusKontrol();
+
             }
+            ++soruSira;
             ZamanKnt();
 
         }
@@ -159,7 +136,7 @@ namespace SoruHane1._4.OgrFormlar
         {
             gecerliBtn = null;
             SeciliTus(sender);
-            soru[soruSira - 1].AnswerStudent = ogrenciCevap;
+            if(exam.soru[soruSira - 1].AnswerCorrect == ogrenciCevap) { dogrusayisi++; }
             ogrenciCevap =' ';
             SoruGetir();
         }
@@ -167,36 +144,9 @@ namespace SoruHane1._4.OgrFormlar
         private void BtnSinavBitir_Click_1(object sender, EventArgs e)
         {
             TmrSoruSuresi.Stop();
-            int ExamId;
-            SqlCommand komut = new SqlCommand("INSERT INTO tblexam (userID,examDate) values(@userId, GETDATE()) SELECT SCOPE_IDENTITY()", Datacon.baglanti());
-            komut.Parameters.AddWithValue("@userId", glblclass.OnlineUserId);
+            int sonuc = dogrusayisi * 10;
+            MessageBox.Show("Puan: "+ sonuc);
 
-            SqlDataReader dr = komut.ExecuteReader();
-            if (dr.Read())
-            {
-                ExamId = Convert.ToInt16(dr[0]);// gelen Sınav Idsini tutuyoruz
-                for (int i = 0; i < soru.Count; i++)
-                {
-                    SqlCommand komut2 = new SqlCommand("INSERT INTO tblexamdetail(examID,questionID,answer,isCorrect) VALUES(@examId, @questionId, @answer, @isCorrect)", Datacon.baglanti());
-                    komut2.Parameters.AddWithValue("@examId", ExamId);
-                    komut2.Parameters.AddWithValue("@questionId", soru[i].QuestionId);
-                    if (soru[i].AnswerCorrect == soru[i].AnswerStudent) { komut2.Parameters.AddWithValue("@answer", 1); komut2.Parameters.AddWithValue("@isCorrect", 3); }
-                    else { komut2.Parameters.AddWithValue("@answer", 0); komut2.Parameters.AddWithValue("@isCorrect", 0); }
-                    int cmd = komut2.ExecuteNonQuery();
-                    if (cmd != 0)
-                    {
-                        Datacon.baglanti().Close();
-
-                    }
-                }
-                TxtSoru.Text = "Sınavınız başarıyla gönderilmiştir";
-                Datacon.baglanti().Close();
-            }
-            else
-            {
-                TxtSoru.Text = "Sistemsel Bir Arza Çıkmıştır Sınavınız İptal Edilmiştir";
-                Datacon.baglanti().Close();
-            }
             BtnSinavBitir.Visible = false;
             tusKontrol();
         }

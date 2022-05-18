@@ -13,50 +13,31 @@ namespace SoruHane1._4
         public string UnitName { get; set; }
         public int Correct { get; set; }
         public int Incorrect { get; set; }
-        public List<Analysis> AnalysisCorrect = new List<Analysis>();
-        public List<Analysis> AnalysisInCorrect = new List<Analysis>();
-        public List<Analysis> AnalysisList = new List<Analysis>();
-        public void PullAnalysisCorrect()
-        {
-            SqlCommand komut = new SqlCommand("EXEC AnalysisUnitCorrect " + glblclass.OnlineUserId, Datacon.baglanti());
-            SqlDataReader dr = komut.ExecuteReader();
 
+        public List<Analysis> AnalysisList = new List<Analysis>(); // Uniteleri liste halinde tutup verileri işleyebilmemiz için oluşturuldu
 
-            while (dr.Read() == true)
-            {
-                Analysis s = new Analysis();
-                s.UnitName = Convert.ToString(dr[0]);
-                s.Correct = Convert.ToInt16(dr[1]);
-                AnalysisList.Add(s);
-            }
-
-            Datacon.baglanti().Close();
-
-
-
-        }
         public void PullAnalysis()
         {
 
             SqlCommand komut = new SqlCommand("select * from tblunit", Datacon.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
-            {
+            { //Veritabanından Uniteler tablosunu okur 
                 Analysis s = new Analysis();
+                s.UnitId = Convert.ToInt16(dr[0]); //gelen değeri unit ıd olarak kayıt eder
+                s.UnitName = Convert.ToString(dr[1]); //gelen değeri unit name olarak kayıt eder
 
-                s.UnitId = Convert.ToInt16(dr[0]);// Oluşturlan @Unitids listesine Veritabanından gelen Ünitelerin Id'si aktarılır
-                s.UnitName = Convert.ToString(dr[1]);
-                SqlCommand komut2 = new SqlCommand("EXEC AnalysisUnitCorrect @p1,@p2", Datacon.baglanti());
+                SqlCommand komut2 = new SqlCommand("EXEC AnalysisUnitCorrect @p1,@p2", Datacon.baglanti()); //Gönderilen ıd e sahip Unitenin doğru saysısını getirir
                 komut2.Parameters.AddWithValue("@p1", glblclass.OnlineUserId);
                 komut2.Parameters.AddWithValue("@p2",s.UnitId);
                 SqlDataReader dr2 = komut2.ExecuteReader();
                 if(dr2.Read() == true)
                 {
-                    s.Correct = Convert.ToInt16(dr2[1]);
+                    s.Correct = Convert.ToInt16(dr2[1]); 
                 }
                 else { s.Correct = 0; }
 
-                SqlCommand komut3 = new SqlCommand("EXEC AnalysisUnitInCorrect @p1,@p2", Datacon.baglanti());
+                SqlCommand komut3 = new SqlCommand("EXEC AnalysisUnitInCorrect @p1,@p2", Datacon.baglanti());//Gönderilen ıd e sahip Unitenin yanlış saysısını getirir
                 komut3.Parameters.AddWithValue("@p1", glblclass.OnlineUserId);
                 komut3.Parameters.AddWithValue("@p2", s.UnitId);
                 SqlDataReader dr3 = komut3.ExecuteReader();
@@ -65,7 +46,7 @@ namespace SoruHane1._4
                     s.Incorrect = Convert.ToInt16(dr3[1]);
                 }
                 else { s.Incorrect = 0; }
-                AnalysisList.Add(s);
+                AnalysisList.Add(s); // oluşturulan nesneyeyi listeye ekler
 
 
 
@@ -76,22 +57,5 @@ namespace SoruHane1._4
             
 
         }
-        public void PullAnalysisInCorrect()
-        {
-            SqlCommand komut = new SqlCommand("EXEC AnalysisUnitInCorrect " + glblclass.OnlineUserId, Datacon.baglanti());
-            SqlDataReader dr = komut.ExecuteReader();
-
-                while (dr.Read())
-                {
-                    Analysis s = new Analysis();
-                    s.UnitName = Convert.ToString(dr[0]);
-                    s.Incorrect = Convert.ToInt16(dr[1]);
-                    AnalysisInCorrect.Add(s);
-                }
-                Datacon.baglanti().Close();
-    
-
-        }
-
     }
 }

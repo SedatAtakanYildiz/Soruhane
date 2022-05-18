@@ -12,7 +12,7 @@ namespace SoruHane1._4
         public bool QueryRegister()
         {
 
-            //sql'de procedure çalıştırıp gönderilen parametre bilgilerinde kullanıcı olup olmadığı döndürür
+            //sql'de procedure çalıştırıp gönderilen parametre bilgileri ile kullanıcıyu veritabanına ekler
             SqlCommand komut = new SqlCommand("exec UserRegister @p1,@p2,@p3,@p4,@p5,@p6,@p7", Datacon.baglanti());
             komut.Parameters.AddWithValue("@p1", UserNickName);
             komut.Parameters.AddWithValue("@p2", UserPass);

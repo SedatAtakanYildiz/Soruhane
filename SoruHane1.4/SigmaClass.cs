@@ -17,7 +17,7 @@ namespace SoruHane1._4
         public int Sigma5 { get; set; }
 
         public void SigmaPull()
-        {
+        {   // öğrenciye ait olan sigma süre değerlerini çeker
             SqlCommand komut = new SqlCommand("SELECT * FROM tblSigmaStudent Where UserId=@p1", Datacon.baglanti());
             komut.Parameters.AddWithValue("@p1", SigmaUserId);
             SqlDataReader dr = komut.ExecuteReader();
@@ -38,8 +38,7 @@ namespace SoruHane1._4
             }
         }
         public bool SigmaChange()
-        {
-            
+        {   //Öğrencin gönderdiği sigma süre değerlerini veritabanına kaydeder
                 SqlCommand komut = new SqlCommand("EXEC SigmaChange @userId,@s1,@s2,@s3,@s4,@s5", Datacon.baglanti());
                 komut.Parameters.AddWithValue("@userId", SigmaUserId);
                 komut.Parameters.AddWithValue("@s1", Sigma1);
@@ -51,8 +50,9 @@ namespace SoruHane1._4
             int cmd = komut.ExecuteNonQuery();
                 if (cmd != 0)
                 {
-                return true; 
                 Datacon.baglanti().Close();
+                return true; 
+                
                 }
             else { return false; }
             

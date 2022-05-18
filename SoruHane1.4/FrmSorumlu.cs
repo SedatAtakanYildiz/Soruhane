@@ -126,7 +126,13 @@ namespace SoruHane1._4
         private void btnUniteEkle_Click(object sender, EventArgs e)
         {
             LblBaslik.Text = "ÜNİTE EKLE";
-            YeniFormAc(new SorumluFormlari.frmAyarlar(), sender);
+            YeniFormAc(new SorumluFormlari.FrmUniteEkle(), sender);
+        }
+
+        private void FrmSorumlu_Load(object sender, EventArgs e)
+        {
+            lblIsim.Text = glblclass.OnlineUserName;
+            lblSoyisim.Text = glblclass.OnlineUserSurname;
         }
     }
 }

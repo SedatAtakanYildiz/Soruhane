@@ -41,9 +41,9 @@ namespace SoruHane1._4
             if (dr.Read())
             {
                if( ChangePassword(yeniSifre, Convert.ToInt16(dr[0]))==true)
-                { return true; }
-                else { return false; }
-                Datacon.baglanti().Close();
+                { Datacon.baglanti().Close(); return true; }
+                else { Datacon.baglanti().Close(); return false; }
+               
                 
             }
             else
@@ -52,12 +52,27 @@ namespace SoruHane1._4
                 return false;
             }
         }
-
         public bool ChangePassword(string YeniSifre,int IdUser)
-        {
+        {   //kullanıcının şifresini değiştirir
             SqlCommand komut = new SqlCommand("UPDATE tbluser SET UserPass = @p2 WHERE UserID=@p1", Datacon.baglanti());
             komut.Parameters.AddWithValue("@p1", IdUser);
             komut.Parameters.AddWithValue("@p2", YeniSifre);
+            int dr = komut.ExecuteNonQuery();
+            if (dr != 0)
+            {
+                Datacon.baglanti().Close();
+                return true;
+            }
+            else
+            {
+                Datacon.baglanti().Close();
+                return false;
+            }
+        }
+        public bool AddUnit(string UnitName)
+        {   //Unite ekler
+            SqlCommand komut = new SqlCommand("INSERT INTO tblunit (UnitName) Values(@p1)", Datacon.baglanti());
+            komut.Parameters.AddWithValue("@p1", UnitName);
             int dr = komut.ExecuteNonQuery();
             if (dr != 0)
             {

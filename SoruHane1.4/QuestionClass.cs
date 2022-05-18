@@ -21,7 +21,7 @@ namespace SoruHane1._4
         public char AnswerCorrect { get; set; }
         public char AnswerStudent { get; set; }
         public bool QuestionAdd()
-        {
+        {   // Veritabanına soruyu kaydeder
             SqlCommand komut = new SqlCommand("exec AddQuestion @path,@qtext,@AnswerA,@AnswerB,@AnswerC,@Answerd,@unitid,@isOk,@AnswerCorrect", Datacon.baglanti());
             komut.Parameters.AddWithValue("@path", QuestionImgPath);
             komut.Parameters.AddWithValue("@qtext", QuestionText);
@@ -42,7 +42,7 @@ namespace SoruHane1._4
 
         }
         public void QuestionOk(int questionId)
-        {
+        {   //Veritabanında sorunun onaylanıp onaylanmadığını gösteren sutunu değirtirir
             SqlCommand komut = new SqlCommand("EXEC QuestionOk @QuestionId,@isOk", Datacon.baglanti());
             komut.Parameters.AddWithValue("@QuestionId", questionId);
             komut.Parameters.AddWithValue("@isOk", 1);
@@ -53,7 +53,7 @@ namespace SoruHane1._4
             }
         }
         public void QuestionNo(int questionId)
-        {
+        {   // onaylanmayan soruyu veritabanından siler
             SqlCommand komut = new SqlCommand("DELETE FROM tblquestions WHERE questionID=@QuestionId", Datacon.baglanti());
             komut.Parameters.AddWithValue("@QuestionId", questionId);
             int cmd = komut.ExecuteNonQuery();
@@ -64,7 +64,7 @@ namespace SoruHane1._4
             else { }
         }
         public void QuestionPull(int PullIsOk)
-        {
+        {   //@PullIsOk parametresi ile onaylı soru veya onaylanmamış soruyu veritabanından çeker
             SqlCommand komut = new SqlCommand("EXEC QuestionPull @IsOk", Datacon.baglanti());
             komut.Parameters.AddWithValue("@IsOk", PullIsOk);
             SqlDataReader dr = komut.ExecuteReader();

@@ -19,10 +19,13 @@ namespace SoruHane1._4.SorumluFormlari
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            if (txtUniteEkle.Text == "Ünite Ekle (+)")
+            if (txtUniteEkle.Text != "")
             {
-
+                QueryClass query=new QueryClass();
+                if(query.AddUnit(txtUniteEkle.Text)==true) { MessageBox.Show("Unite başarı ile eklendi"); }
+                else { MessageBox.Show("Sistemsel bir hata oluştu lütfen daha sonra tekrar deneyiniz"); }
             }
+            else { MessageBox.Show("Ünite Adını Boş bıraktınız"); }
         }
 
         private void txtUniteEkle_Click(object sender, EventArgs e)

@@ -17,7 +17,7 @@ namespace SoruHane1._4
         public string UserPass { get; set; }
 
         public void UserInfoPullDb(int PullUserId)
-        {
+        {   // Kullanıcı bilgilerini veritabanından çeker
             SqlCommand komut = new SqlCommand("exec PullUserInfo @p1", Datacon.baglanti());
             komut.Parameters.AddWithValue("@p1", PullUserId);
             SqlDataReader dr = komut.ExecuteReader();

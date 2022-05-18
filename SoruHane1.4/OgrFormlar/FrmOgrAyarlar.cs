@@ -18,7 +18,7 @@ namespace SoruHane1._4.OgrFormlar
         }
         SigmaClass sgmcls = new SigmaClass();   
         private void SigmaCek()
-        {
+        {   //Sigma değerlerini çeker ve gerekli alanlara yazar
             sgmcls.SigmaPull();
             TxtSigma1.Text =Convert.ToString(sgmcls.Sigma1);
             TxtSigma2.Text = Convert.ToString(sgmcls.Sigma2);
@@ -27,7 +27,7 @@ namespace SoruHane1._4.OgrFormlar
             TxtSigma5.Text = Convert.ToString(sgmcls.Sigma5);
         }
         private void BtnOnay_Click(object sender, EventArgs e)
-        {
+        {   //Sigma süre alanlarındaki bilgileri nesneye gönderir ve sigma süre değerlerini değiştirme fonksiyonunu çalıştırır
             sgmcls.Sigma1=Convert.ToInt16(TxtSigma1.Text);
             sgmcls.Sigma2=Convert.ToInt16(TxtSigma2.Text);  
             sgmcls.Sigma3=Convert.ToInt16(TxtSigma3.Text);

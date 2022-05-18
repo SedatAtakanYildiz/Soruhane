@@ -138,5 +138,11 @@ namespace SoruHane1._4
             lblIsim.Text = glblclass.OnlineUserName;
             lblSoyisim.Text = glblclass.OnlineUserSurname;
         }
+
+        private void FrmAdmin_Load_1(object sender, EventArgs e)
+        {
+            lblIsim.Text = glblclass.OnlineUserName;
+            lblSoyisim.Text = glblclass.OnlineUserSurname;
+        }
     }
 }
