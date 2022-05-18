@@ -26,3 +26,7 @@
  -  ![alt text](https://imgyukle.com/f/2022/05/18/RFFhqj.png)
  -  <em><strong> Hesap Ayarları: </em></strong>Kendi Şifresini değiştirme
  -  ![alt text](https://imgyukle.com/f/2022/05/18/RFAMLc.png)
+## Ekip:
+<b> Umut Can YILMAZ </b> [GitHub](https://github.com/iamumutcan) </br>
+<b> Sedat Atakan YILDIZ </b>  [GitHub](https://github.com/SedatAtakanYildiz)
+
