@@ -67,10 +67,10 @@
     <Compile Include="adminFormlar\frmSoruOnayla.Designer.cs">
       <DependentUpon>frmSoruOnayla.cs</DependentUpon>
     </Compile>
-    <Compile Include="Analysis.cs" />
+    <Compile Include="Classs\Analysis.cs" />
     <Compile Include="DatabaseCon\Datacon.cs" />
     <Compile Include="DatabaseCon\QueryClass.cs" />
-    <Compile Include="ExamClass.cs" />
+    <Compile Include="Classs\ExamClass.cs" />
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,7 +107,7 @@
     <Compile Include="FrmSorumlu.Designer.cs">
       <DependentUpon>FrmSorumlu.cs</DependentUpon>
     </Compile>
-    <Compile Include="glblclass.cs" />
+    <Compile Include="Classs\glblclass.cs" />
     <Compile Include="OgrFormlar\FrmAnaliz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,9 +134,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuestionClass.cs" />
-    <Compile Include="RegisterClass.cs" />
-    <Compile Include="SigmaClass.cs" />
+    <Compile Include="Classs\QuestionClass.cs" />
+    <Compile Include="Classs\RegisterClass.cs" />
+    <Compile Include="Classs\SigmaClass.cs" />
     <Compile Include="SorumluFormlari\frmAyarlar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,8 +155,8 @@
     <Compile Include="SorumluFormlari\FrmUniteEkle.Designer.cs">
       <DependentUpon>FrmUniteEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="TemaRengi.cs" />
-    <Compile Include="UserClass.cs" />
+    <Compile Include="Classs\TemaRengi.cs" />
+    <Compile Include="Classs\UserClass.cs" />
     <EmbeddedResource Include="adminFormlar\FrmAdmin-sorumluKayıt.resx">
       <DependentUpon>FrmAdmin-sorumluKayıt.cs</DependentUpon>
     </EmbeddedResource>

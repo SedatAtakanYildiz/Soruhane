@@ -284,6 +284,7 @@
             this.MinimumSize = new System.Drawing.Size(716, 454);
             this.Name = "FrmSorumlu";
             this.Text = "FrmSorumlu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmSorumlu_Load);
             this.panelAna.ResumeLayout(false);
             this.panelAna.PerformLayout();

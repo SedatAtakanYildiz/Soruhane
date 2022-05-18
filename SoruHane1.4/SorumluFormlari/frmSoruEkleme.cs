@@ -92,10 +92,7 @@ namespace SoruHane1._4.SorumluFormlari
 
         private void btnBitir_Click(object sender, EventArgs e)
         {
-            if((txtUniteEkle.Text == "Ünite Ekle (+)") || (txtUniteEkle.Text == ""))
-            {
-
-            }
+        
             if ((TxtSoru.Text == "") || (TxtSoru.Text == "Lütfen sorunuzu bu alana giriniz."))
             {
                 MessageBox.Show("Lütfen Geçerli Bir Soru Giriniz", "HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -141,10 +138,6 @@ namespace SoruHane1._4.SorumluFormlari
             Datacon.baglanti().Close();
         }
 
-        private void txtUniteEkle_Click(object sender, EventArgs e)
-        {
-            if (txtUniteEkle.Text == "Ünite Ekle (+)")
-                txtUniteEkle.Text = "";
-        }
+     
     }
 }

@@ -74,8 +74,9 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 489);
+            this.panel1.Size = new System.Drawing.Size(172, 397);
             this.panel1.TabIndex = 0;
             // 
             // label3
@@ -84,9 +85,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(-4, 470);
+            this.label3.Location = new System.Drawing.Point(-3, 382);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 20);
+            this.label3.Size = new System.Drawing.Size(119, 17);
             this.label3.TabIndex = 36;
             this.label3.Text = "Tüm Hakları Saklıdır";
             // 
@@ -96,9 +98,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(-4, 450);
+            this.label2.Location = new System.Drawing.Point(-3, 366);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 20);
+            this.label2.Size = new System.Drawing.Size(105, 17);
             this.label2.TabIndex = 35;
             this.label2.Text = "Soru Hane v1.4   ";
             // 
@@ -108,9 +111,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Ravie", 19.8F);
             this.label5.ForeColor = System.Drawing.Color.Honeydew;
-            this.label5.Location = new System.Drawing.Point(96, 248);
+            this.label5.Location = new System.Drawing.Point(72, 202);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 44);
+            this.label5.Size = new System.Drawing.Size(109, 36);
             this.label5.TabIndex = 34;
             this.label5.Text = "HANE";
             // 
@@ -120,9 +124,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MV Boli", 19.8F);
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(-7, 248);
+            this.label4.Location = new System.Drawing.Point(-5, 202);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 44);
+            this.label4.Size = new System.Drawing.Size(89, 34);
             this.label4.TabIndex = 33;
             this.label4.Text = "SORU";
             // 
@@ -130,7 +135,8 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(60, 135);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 110);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -151,9 +157,10 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(230, 0);
+            this.panel2.Location = new System.Drawing.Point(172, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(540, 489);
+            this.panel2.Size = new System.Drawing.Size(406, 397);
             this.panel2.TabIndex = 1;
             // 
             // BtnCıkıs
@@ -165,9 +172,10 @@
             this.BtnCıkıs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCıkıs.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnCıkıs.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtnCıkıs.Location = new System.Drawing.Point(509, 0);
+            this.BtnCıkıs.Location = new System.Drawing.Point(382, 0);
+            this.BtnCıkıs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCıkıs.Name = "BtnCıkıs";
-            this.BtnCıkıs.Size = new System.Drawing.Size(31, 33);
+            this.BtnCıkıs.Size = new System.Drawing.Size(23, 27);
             this.BtnCıkıs.TabIndex = 35;
             this.BtnCıkıs.UseVisualStyleBackColor = false;
             this.BtnCıkıs.Click += new System.EventHandler(this.BtnCıkıs_Click);
@@ -179,9 +187,10 @@
             this.BtnUnuttum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnUnuttum.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnUnuttum.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnUnuttum.Location = new System.Drawing.Point(6, 441);
+            this.BtnUnuttum.Location = new System.Drawing.Point(4, 358);
+            this.BtnUnuttum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnUnuttum.Name = "BtnUnuttum";
-            this.BtnUnuttum.Size = new System.Drawing.Size(177, 36);
+            this.BtnUnuttum.Size = new System.Drawing.Size(133, 29);
             this.BtnUnuttum.TabIndex = 34;
             this.BtnUnuttum.Text = "Şifremi Unuttum";
             this.BtnUnuttum.UseVisualStyleBackColor = false;
@@ -194,9 +203,10 @@
             this.BtnKayitOl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnKayitOl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKayitOl.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnKayitOl.Location = new System.Drawing.Point(396, 441);
+            this.BtnKayitOl.Location = new System.Drawing.Point(297, 358);
+            this.BtnKayitOl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnKayitOl.Name = "BtnKayitOl";
-            this.BtnKayitOl.Size = new System.Drawing.Size(119, 36);
+            this.BtnKayitOl.Size = new System.Drawing.Size(89, 29);
             this.BtnKayitOl.TabIndex = 33;
             this.BtnKayitOl.Text = "Kayıt Ol\r\n";
             this.BtnKayitOl.UseVisualStyleBackColor = false;
@@ -209,9 +219,10 @@
             this.btnGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGiris.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGiris.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnGiris.Location = new System.Drawing.Point(325, 327);
+            this.btnGiris.Location = new System.Drawing.Point(244, 266);
+            this.btnGiris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGiris.Name = "btnGiris";
-            this.btnGiris.Size = new System.Drawing.Size(190, 37);
+            this.btnGiris.Size = new System.Drawing.Size(142, 30);
             this.btnGiris.TabIndex = 32;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.UseVisualStyleBackColor = false;
@@ -226,9 +237,10 @@
             this.panel5.Controls.Add(this.RdSorumlu);
             this.panel5.Controls.Add(this.RdAdmin);
             this.panel5.Controls.Add(this.RdOgrenci);
-            this.panel5.Location = new System.Drawing.Point(0, 270);
+            this.panel5.Location = new System.Drawing.Point(0, 219);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(540, 51);
+            this.panel5.Size = new System.Drawing.Size(405, 41);
             this.panel5.TabIndex = 31;
             // 
             // pictureBox4
@@ -236,10 +248,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(488, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(366, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 51);
+            this.pictureBox4.Size = new System.Drawing.Size(39, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 32;
             this.pictureBox4.TabStop = false;
@@ -251,9 +263,10 @@
             this.RdSorumlu.BackColor = System.Drawing.Color.Transparent;
             this.RdSorumlu.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.RdSorumlu.ForeColor = System.Drawing.Color.DimGray;
-            this.RdSorumlu.Location = new System.Drawing.Point(298, 13);
+            this.RdSorumlu.Location = new System.Drawing.Point(224, 11);
+            this.RdSorumlu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RdSorumlu.Name = "RdSorumlu";
-            this.RdSorumlu.Size = new System.Drawing.Size(159, 25);
+            this.RdSorumlu.Size = new System.Drawing.Size(136, 23);
             this.RdSorumlu.TabIndex = 24;
             this.RdSorumlu.TabStop = true;
             this.RdSorumlu.Text = "Sınav Sorumlusu";
@@ -266,9 +279,10 @@
             this.RdAdmin.BackColor = System.Drawing.Color.Transparent;
             this.RdAdmin.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.RdAdmin.ForeColor = System.Drawing.Color.DimGray;
-            this.RdAdmin.Location = new System.Drawing.Point(39, 13);
+            this.RdAdmin.Location = new System.Drawing.Point(29, 11);
+            this.RdAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RdAdmin.Name = "RdAdmin";
-            this.RdAdmin.Size = new System.Drawing.Size(84, 25);
+            this.RdAdmin.Size = new System.Drawing.Size(71, 23);
             this.RdAdmin.TabIndex = 22;
             this.RdAdmin.TabStop = true;
             this.RdAdmin.Text = "Admin";
@@ -281,9 +295,10 @@
             this.RdOgrenci.BackColor = System.Drawing.Color.Transparent;
             this.RdOgrenci.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.RdOgrenci.ForeColor = System.Drawing.Color.DimGray;
-            this.RdOgrenci.Location = new System.Drawing.Point(162, 13);
+            this.RdOgrenci.Location = new System.Drawing.Point(122, 11);
+            this.RdOgrenci.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RdOgrenci.Name = "RdOgrenci";
-            this.RdOgrenci.Size = new System.Drawing.Size(97, 25);
+            this.RdOgrenci.Size = new System.Drawing.Size(82, 23);
             this.RdOgrenci.TabIndex = 23;
             this.RdOgrenci.TabStop = true;
             this.RdOgrenci.Text = "Öğrenci";
@@ -295,9 +310,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(147, 125);
+            this.label1.Location = new System.Drawing.Point(110, 102);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 23);
+            this.label1.Size = new System.Drawing.Size(162, 21);
             this.label1.TabIndex = 30;
             this.label1.Text = "Kullanıcı Adı ve Şifre";
             // 
@@ -308,18 +324,20 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.textSifre);
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(0, 217);
+            this.panel4.Location = new System.Drawing.Point(0, 176);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(550, 47);
+            this.panel4.Size = new System.Drawing.Size(412, 38);
             this.panel4.TabIndex = 1;
             // 
             // textSifre
             // 
             this.textSifre.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.textSifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textSifre.Location = new System.Drawing.Point(84, 6);
+            this.textSifre.Location = new System.Drawing.Point(63, 5);
+            this.textSifre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textSifre.Name = "textSifre";
-            this.textSifre.Size = new System.Drawing.Size(347, 36);
+            this.textSifre.Size = new System.Drawing.Size(261, 30);
             this.textSifre.TabIndex = 31;
             this.textSifre.UseSystemPasswordChar = true;
             // 
@@ -327,9 +345,10 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(46, 6);
+            this.pictureBox3.Location = new System.Drawing.Point(34, 5);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(24, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
@@ -341,39 +360,43 @@
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.textKullanici);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(0, 164);
+            this.panel3.Location = new System.Drawing.Point(0, 133);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(550, 47);
+            this.panel3.Size = new System.Drawing.Size(412, 38);
             this.panel3.TabIndex = 0;
             // 
             // textKullanici
             // 
             this.textKullanici.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.textKullanici.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.textKullanici.Location = new System.Drawing.Point(84, 6);
+            this.textKullanici.Location = new System.Drawing.Point(63, 5);
+            this.textKullanici.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textKullanici.Name = "textKullanici";
-            this.textKullanici.Size = new System.Drawing.Size(347, 36);
+            this.textKullanici.Size = new System.Drawing.Size(261, 30);
             this.textKullanici.TabIndex = 31;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(46, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(34, 5);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(24, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 489);
+            this.ClientSize = new System.Drawing.Size(578, 397);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGİN";

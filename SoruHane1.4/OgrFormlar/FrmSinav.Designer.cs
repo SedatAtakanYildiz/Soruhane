@@ -63,17 +63,17 @@
             this.panel1.Controls.Add(this.pictureSoru);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1023, 621);
+            this.panel1.Size = new System.Drawing.Size(767, 505);
             this.panel1.TabIndex = 1;
             // 
             // pictureZaman
             // 
             this.pictureZaman.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureZaman.Image = ((System.Drawing.Image)(resources.GetObject("pictureZaman.Image")));
-            this.pictureZaman.Location = new System.Drawing.Point(607, 209);
-            this.pictureZaman.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureZaman.Location = new System.Drawing.Point(455, 170);
+            this.pictureZaman.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureZaman.Name = "pictureZaman";
             this.pictureZaman.Size = new System.Drawing.Size(48, 48);
             this.pictureZaman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -88,9 +88,10 @@
             this.lblZaman.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblZaman.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(140)))), ((int)(((byte)(235)))));
             this.lblZaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblZaman.Location = new System.Drawing.Point(661, 218);
+            this.lblZaman.Location = new System.Drawing.Point(496, 177);
+            this.lblZaman.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblZaman.Name = "lblZaman";
-            this.lblZaman.Size = new System.Drawing.Size(46, 39);
+            this.lblZaman.Size = new System.Drawing.Size(39, 34);
             this.lblZaman.TabIndex = 21;
             this.lblZaman.Text = "60";
             this.lblZaman.Visible = false;
@@ -103,9 +104,10 @@
             this.PnlCevap.Controls.Add(this.btnB);
             this.PnlCevap.Controls.Add(this.BtnC);
             this.PnlCevap.Controls.Add(this.BtnD);
-            this.PnlCevap.Location = new System.Drawing.Point(0, 279);
+            this.PnlCevap.Location = new System.Drawing.Point(0, 227);
+            this.PnlCevap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlCevap.Name = "PnlCevap";
-            this.PnlCevap.Size = new System.Drawing.Size(1023, 281);
+            this.PnlCevap.Size = new System.Drawing.Size(767, 229);
             this.PnlCevap.TabIndex = 12;
             // 
             // BtnA
@@ -119,10 +121,10 @@
             this.BtnA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnA.Image = ((System.Drawing.Image)(resources.GetObject("BtnA.Image")));
             this.BtnA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnA.Location = new System.Drawing.Point(77, 4);
-            this.BtnA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnA.Location = new System.Drawing.Point(58, 3);
+            this.BtnA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnA.Name = "BtnA";
-            this.BtnA.Size = new System.Drawing.Size(175, 70);
+            this.BtnA.Size = new System.Drawing.Size(131, 57);
             this.BtnA.TabIndex = 2;
             this.BtnA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnA.UseVisualStyleBackColor = false;
@@ -139,10 +141,10 @@
             this.btnB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnB.Image = ((System.Drawing.Image)(resources.GetObject("btnB.Image")));
             this.btnB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnB.Location = new System.Drawing.Point(77, 78);
-            this.btnB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB.Location = new System.Drawing.Point(58, 63);
+            this.btnB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(175, 61);
+            this.btnB.Size = new System.Drawing.Size(131, 54);
             this.btnB.TabIndex = 3;
             this.btnB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnB.UseVisualStyleBackColor = true;
@@ -159,10 +161,10 @@
             this.BtnC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnC.Image = ((System.Drawing.Image)(resources.GetObject("BtnC.Image")));
             this.BtnC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnC.Location = new System.Drawing.Point(77, 143);
-            this.BtnC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnC.Location = new System.Drawing.Point(58, 116);
+            this.BtnC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnC.Name = "BtnC";
-            this.BtnC.Size = new System.Drawing.Size(175, 66);
+            this.BtnC.Size = new System.Drawing.Size(131, 54);
             this.BtnC.TabIndex = 4;
             this.BtnC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnC.UseVisualStyleBackColor = true;
@@ -179,10 +181,10 @@
             this.BtnD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnD.Image = ((System.Drawing.Image)(resources.GetObject("BtnD.Image")));
             this.BtnD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnD.Location = new System.Drawing.Point(77, 213);
-            this.BtnD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnD.Location = new System.Drawing.Point(58, 173);
+            this.BtnD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnD.Name = "BtnD";
-            this.BtnD.Size = new System.Drawing.Size(175, 66);
+            this.BtnD.Size = new System.Drawing.Size(131, 54);
             this.BtnD.TabIndex = 5;
             this.BtnD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnD.UseVisualStyleBackColor = true;
@@ -197,9 +199,10 @@
             this.BtnSinavBitir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSinavBitir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnSinavBitir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSinavBitir.Image")));
-            this.BtnSinavBitir.Location = new System.Drawing.Point(374, 552);
+            this.BtnSinavBitir.Location = new System.Drawing.Point(280, 448);
+            this.BtnSinavBitir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSinavBitir.Name = "BtnSinavBitir";
-            this.BtnSinavBitir.Size = new System.Drawing.Size(203, 66);
+            this.BtnSinavBitir.Size = new System.Drawing.Size(152, 54);
             this.BtnSinavBitir.TabIndex = 11;
             this.BtnSinavBitir.Text = "  Sınavı Bitir";
             this.BtnSinavBitir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -215,9 +218,10 @@
             this.BtnSinavilerle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSinavilerle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnSinavilerle.Image = ((System.Drawing.Image)(resources.GetObject("BtnSinavilerle.Image")));
-            this.BtnSinavilerle.Location = new System.Drawing.Point(131, 552);
+            this.BtnSinavilerle.Location = new System.Drawing.Point(98, 448);
+            this.BtnSinavilerle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSinavilerle.Name = "BtnSinavilerle";
-            this.BtnSinavilerle.Size = new System.Drawing.Size(203, 66);
+            this.BtnSinavilerle.Size = new System.Drawing.Size(152, 54);
             this.BtnSinavilerle.TabIndex = 10;
             this.BtnSinavilerle.Text = "  Sonraki Soru";
             this.BtnSinavilerle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -233,9 +237,10 @@
             this.BtnSinavBasla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSinavBasla.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnSinavBasla.Image = ((System.Drawing.Image)(resources.GetObject("BtnSinavBasla.Image")));
-            this.BtnSinavBasla.Location = new System.Drawing.Point(165, 212);
+            this.BtnSinavBasla.Location = new System.Drawing.Point(124, 172);
+            this.BtnSinavBasla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSinavBasla.Name = "BtnSinavBasla";
-            this.BtnSinavBasla.Size = new System.Drawing.Size(203, 66);
+            this.BtnSinavBasla.Size = new System.Drawing.Size(152, 54);
             this.BtnSinavBasla.TabIndex = 9;
             this.BtnSinavBasla.Text = "Sınava Başla";
             this.BtnSinavBasla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -249,13 +254,13 @@
             this.TxtSoru.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtSoru.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSoru.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.TxtSoru.Location = new System.Drawing.Point(83, 63);
-            this.TxtSoru.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtSoru.Location = new System.Drawing.Point(62, 51);
+            this.TxtSoru.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtSoru.MaxLength = 1000;
             this.TxtSoru.Name = "TxtSoru";
             this.TxtSoru.ReadOnly = true;
             this.TxtSoru.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.TxtSoru.Size = new System.Drawing.Size(489, 185);
+            this.TxtSoru.Size = new System.Drawing.Size(367, 150);
             this.TxtSoru.TabIndex = 1;
             this.TxtSoru.Text = " Lütfen dikkat edin\n   Sorularda geri dönüş yoktur!\n   Her Soruda 1 dakika süreni" +
     "z vardır.\n   1 dkk sonra soru otomatik atlayacaktır!!\n   Başarılar Dileriz...";
@@ -264,10 +269,10 @@
             // 
             this.pictureSoru.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureSoru.Image = ((System.Drawing.Image)(resources.GetObject("pictureSoru.Image")));
-            this.pictureSoru.Location = new System.Drawing.Point(578, 63);
-            this.pictureSoru.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureSoru.Location = new System.Drawing.Point(434, 51);
+            this.pictureSoru.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureSoru.Name = "pictureSoru";
-            this.pictureSoru.Size = new System.Drawing.Size(133, 123);
+            this.pictureSoru.Size = new System.Drawing.Size(100, 100);
             this.pictureSoru.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureSoru.TabIndex = 0;
             this.pictureSoru.TabStop = false;
@@ -279,11 +284,11 @@
             // 
             // FrmSinav
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 621);
+            this.ClientSize = new System.Drawing.Size(767, 505);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmSinav";
             this.Text = "FrmSinav";
             this.Load += new System.EventHandler(this.FrmSinav_Load);

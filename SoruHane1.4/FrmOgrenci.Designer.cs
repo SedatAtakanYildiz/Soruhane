@@ -331,6 +331,7 @@
             this.Name = "FrmOgrenci";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmOgrenci";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmOgrenci_Load_1);
             this.panelMenu.ResumeLayout(false);
             this.panelKullanici.ResumeLayout(false);
