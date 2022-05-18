@@ -41,7 +41,7 @@ namespace SoruHane1._4.OgrFormlar
         private void FrmAnaliz_Load(object sender, EventArgs e)
         {
 
-        
+
             //anls.PullAnalysisCorrect();
             //anls.PullAnalysisInCorrect();
             //for(int i = 0; i < anls.AnalysisCorrect.Count; i++)
@@ -50,13 +50,14 @@ namespace SoruHane1._4.OgrFormlar
 
             //}
 
+            
             anls.PullAnalysis();
             for (int i = 0; i < anls.AnalysisList.Count; i++)
             {
                 ChartUnite.Series["Units"].Points.AddXY(anls.AnalysisList[i].UnitName, anls.AnalysisList[i].Correct);
 
             }
-
+            ChartUnite.Series["Units"]["PieLabelStyle"] = "Disabled";
 
         }
     }

@@ -55,9 +55,9 @@
             this.panel1.Controls.Add(this.ChartUnite);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(999, 518);
+            this.panel1.Size = new System.Drawing.Size(1332, 638);
             this.panel1.TabIndex = 5;
             // 
             // chartDogruYanlis
@@ -74,7 +74,6 @@
             chartArea1.AxisX.Interval = 1D;
             chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Azure;
             chartArea1.AxisX.LineColor = System.Drawing.Color.Silver;
-            chartArea1.AxisY.Interval = 2D;
             chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Azure;
             chartArea1.AxisY.LineColor = System.Drawing.Color.Silver;
             chartArea1.BackColor = System.Drawing.Color.Transparent;
@@ -101,8 +100,8 @@
             legend1.TitleBackColor = System.Drawing.Color.Transparent;
             legend1.TitleForeColor = System.Drawing.Color.Gainsboro;
             this.chartDogruYanlis.Legends.Add(legend1);
-            this.chartDogruYanlis.Location = new System.Drawing.Point(562, 51);
-            this.chartDogruYanlis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartDogruYanlis.Location = new System.Drawing.Point(749, 63);
+            this.chartDogruYanlis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartDogruYanlis.Name = "chartDogruYanlis";
             this.chartDogruYanlis.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series1.ChartArea = "ChartArea1";
@@ -113,7 +112,7 @@
             series2.Name = "Yanlış";
             this.chartDogruYanlis.Series.Add(series1);
             this.chartDogruYanlis.Series.Add(series2);
-            this.chartDogruYanlis.Size = new System.Drawing.Size(403, 375);
+            this.chartDogruYanlis.Size = new System.Drawing.Size(537, 462);
             this.chartDogruYanlis.TabIndex = 21;
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             title1.ForeColor = System.Drawing.Color.Gainsboro;
@@ -131,10 +130,10 @@
             this.BtnDogruYanlis.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnDogruYanlis.Image = ((System.Drawing.Image)(resources.GetObject("BtnDogruYanlis.Image")));
             this.BtnDogruYanlis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDogruYanlis.Location = new System.Drawing.Point(388, 444);
-            this.BtnDogruYanlis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnDogruYanlis.Location = new System.Drawing.Point(530, 557);
+            this.BtnDogruYanlis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDogruYanlis.Name = "BtnDogruYanlis";
-            this.BtnDogruYanlis.Size = new System.Drawing.Size(265, 54);
+            this.BtnDogruYanlis.Size = new System.Drawing.Size(353, 66);
             this.BtnDogruYanlis.TabIndex = 20;
             this.BtnDogruYanlis.Text = "  Doğru Yanlış Bilgilerini Çek";
             this.BtnDogruYanlis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -150,6 +149,14 @@
             chartArea2.Area3DStyle.Enable3D = true;
             chartArea2.Area3DStyle.IsRightAngleAxes = false;
             chartArea2.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisX2.IsLabelAutoFit = false;
+            chartArea2.AxisX2.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
+            chartArea2.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            chartArea2.AxisX2.TitleForeColor = System.Drawing.Color.BlanchedAlmond;
+            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.Transparent;
+            chartArea2.AxisY2.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
             chartArea2.BackColor = System.Drawing.Color.Transparent;
             chartArea2.BorderColor = System.Drawing.Color.Transparent;
             chartArea2.BorderWidth = 0;
@@ -157,16 +164,13 @@
             chartArea2.Position.Auto = false;
             chartArea2.Position.Height = 69.00081F;
             chartArea2.Position.Width = 94F;
-            chartArea2.Position.X = 1F;
             chartArea2.Position.Y = 12.19131F;
             this.ChartUnite.ChartAreas.Add(chartArea2);
             legend2.BackColor = System.Drawing.Color.Transparent;
             legend2.BorderWidth = 0;
             legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             legend2.ForeColor = System.Drawing.Color.Gainsboro;
             legend2.HeaderSeparatorColor = System.Drawing.Color.Transparent;
-            legend2.IsTextAutoFit = false;
             legend2.ItemColumnSeparatorColor = System.Drawing.Color.Transparent;
             legend2.Name = "Legend1";
             legend2.Title = "Üniteler";
@@ -174,8 +178,8 @@
             legend2.TitleBackColor = System.Drawing.Color.Transparent;
             legend2.TitleForeColor = System.Drawing.Color.Gainsboro;
             this.ChartUnite.Legends.Add(legend2);
-            this.ChartUnite.Location = new System.Drawing.Point(103, 51);
-            this.ChartUnite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ChartUnite.Location = new System.Drawing.Point(137, 63);
+            this.ChartUnite.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChartUnite.Name = "ChartUnite";
             this.ChartUnite.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series3.ChartArea = "ChartArea1";
@@ -183,7 +187,7 @@
             series3.Legend = "Legend1";
             series3.Name = "Units";
             this.ChartUnite.Series.Add(series3);
-            this.ChartUnite.Size = new System.Drawing.Size(418, 375);
+            this.ChartUnite.Size = new System.Drawing.Size(606, 490);
             this.ChartUnite.TabIndex = 0;
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             title2.ForeColor = System.Drawing.Color.Gainsboro;
@@ -193,11 +197,11 @@
             // 
             // FrmAnaliz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 518);
+            this.ClientSize = new System.Drawing.Size(1332, 638);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmAnaliz";
             this.Text = "FrmAnaliz";
             this.Load += new System.EventHandler(this.FrmAnaliz_Load);

@@ -87,7 +87,7 @@
             this.lblZaman.Font = new System.Drawing.Font("Agency FB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblZaman.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(140)))), ((int)(((byte)(235)))));
             this.lblZaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblZaman.Location = new System.Drawing.Point(652, 196);
+            this.lblZaman.Location = new System.Drawing.Point(661, 198);
             this.lblZaman.Name = "lblZaman";
             this.lblZaman.Size = new System.Drawing.Size(46, 39);
             this.lblZaman.TabIndex = 19;
