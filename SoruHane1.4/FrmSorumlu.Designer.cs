@@ -61,7 +61,7 @@
             this.panelAna.Controls.Add(this.pictureBox1);
             this.panelAna.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAna.Location = new System.Drawing.Point(165, 81);
-            this.panelAna.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelAna.Margin = new System.Windows.Forms.Padding(2);
             this.panelAna.Name = "panelAna";
             this.panelAna.Size = new System.Drawing.Size(701, 461);
             this.panelAna.TabIndex = 5;
@@ -100,7 +100,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(275, 98);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,7 +115,7 @@
             this.panelBaslik.Controls.Add(this.LblBaslik);
             this.panelBaslik.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBaslik.Location = new System.Drawing.Point(165, 0);
-            this.panelBaslik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelBaslik.Margin = new System.Windows.Forms.Padding(2);
             this.panelBaslik.Name = "panelBaslik";
             this.panelBaslik.Size = new System.Drawing.Size(701, 81);
             this.panelBaslik.TabIndex = 4;
@@ -127,7 +127,7 @@
             this.BtnFormKapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFormKapa.Image = ((System.Drawing.Image)(resources.GetObject("BtnFormKapa.Image")));
             this.BtnFormKapa.Location = new System.Drawing.Point(0, 0);
-            this.BtnFormKapa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnFormKapa.Margin = new System.Windows.Forms.Padding(2);
             this.BtnFormKapa.Name = "BtnFormKapa";
             this.BtnFormKapa.Size = new System.Drawing.Size(68, 81);
             this.BtnFormKapa.TabIndex = 6;
@@ -141,7 +141,7 @@
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
             this.btnCikis.Location = new System.Drawing.Point(665, 2);
-            this.btnCikis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCikis.Margin = new System.Windows.Forms.Padding(2);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(34, 29);
             this.btnCikis.TabIndex = 5;
@@ -171,7 +171,7 @@
             this.panelMenu.Controls.Add(this.panelKullanici);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(165, 542);
             this.panelMenu.TabIndex = 3;
@@ -186,7 +186,7 @@
             this.btnAyarlar.Image = ((System.Drawing.Image)(resources.GetObject("btnAyarlar.Image")));
             this.btnAyarlar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAyarlar.Location = new System.Drawing.Point(0, 179);
-            this.btnAyarlar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAyarlar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAyarlar.Name = "btnAyarlar";
             this.btnAyarlar.Size = new System.Drawing.Size(165, 49);
             this.btnAyarlar.TabIndex = 8;
@@ -206,7 +206,7 @@
             this.btnUniteEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnUniteEkle.Image")));
             this.btnUniteEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUniteEkle.Location = new System.Drawing.Point(0, 130);
-            this.btnUniteEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUniteEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnUniteEkle.Name = "btnUniteEkle";
             this.btnUniteEkle.Size = new System.Drawing.Size(165, 49);
             this.btnUniteEkle.TabIndex = 7;
@@ -226,7 +226,7 @@
             this.btnSoruEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnSoruEkle.Image")));
             this.btnSoruEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSoruEkle.Location = new System.Drawing.Point(0, 81);
-            this.btnSoruEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSoruEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoruEkle.Name = "btnSoruEkle";
             this.btnSoruEkle.Size = new System.Drawing.Size(165, 49);
             this.btnSoruEkle.TabIndex = 2;
@@ -243,7 +243,7 @@
             this.panelKullanici.Controls.Add(this.lblIsim);
             this.panelKullanici.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelKullanici.Location = new System.Drawing.Point(0, 0);
-            this.panelKullanici.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelKullanici.Margin = new System.Windows.Forms.Padding(2);
             this.panelKullanici.Name = "panelKullanici";
             this.panelKullanici.Size = new System.Drawing.Size(165, 81);
             this.panelKullanici.TabIndex = 1;
@@ -280,11 +280,10 @@
             this.Controls.Add(this.panelAna);
             this.Controls.Add(this.panelBaslik);
             this.Controls.Add(this.panelMenu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(716, 454);
             this.Name = "FrmSorumlu";
             this.Text = "FrmSorumlu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmSorumlu_Load);
             this.panelAna.ResumeLayout(false);
             this.panelAna.PerformLayout();
